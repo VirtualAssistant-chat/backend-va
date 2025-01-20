@@ -1,0 +1,1 @@
+ALTER TABLE db_schema."user" RENAME TO user_info;

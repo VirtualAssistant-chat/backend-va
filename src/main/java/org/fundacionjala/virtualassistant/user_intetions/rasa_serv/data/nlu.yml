@@ -1,0 +1,3222 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+
+  - intent: PREVIOUS
+    examples: |
+      - Backtrack to the last song.
+      - Play the song that came before this one.
+      - Go back to the previous music track.
+      - I want to hear the previous track.
+      - Return to the previous song, please.
+      - Take me back to the last tune.
+      - Previous tune, thanks.
+      - Play the song that played earlier.
+      - Move back one track.
+      - Step back to the previous song.
+      - I'd like to listen to the previous track.
+      - Go to the song before this.
+      - Play the previous music.
+      - Reverse to the previous song.
+      - Play the track before this.
+      - Play the last song again.
+      - Go back to the previous tune.
+      - Give me the previous song.
+      - Replay the previous track.
+      - Return to the previous music.
+      - Put on the song that played before.
+      - Play the previous one.
+      - Back to the previous song.
+      - Take me to the song that played last.
+      - Move back to the last track.
+      - Play the previous tune.
+      - Go to the song that came before.
+      - Previous audio, please.
+      - Play the previous melody.
+      - Rewind to the previous song.
+      - Previous soundtrack.
+      - Start the previous track.
+      - Put on the song from before.
+      - Play the track prior to this.
+      - Go back in the playlist.
+      - Play the previous sound.
+      - Play the last tune.
+      - Get me the song before this.
+      - Return to the previous audio.
+      - Replay the last song.
+      - Play the one before this.
+      - Move to the previous tune.
+      - Play the previous song again.
+      - Take me back to the previous melody.
+      - I'd like the music before this.
+      - Play the one that played before.
+      - Previous track, please.
+      - Go to the previous sound.
+      - Previous song, please.
+      - Play the one that came before.
+      - Put on the previous song.
+      - Take me back to the song before this.
+      - Go to the previous melody.
+      - Play the previous track now.
+      - Rewind to the last song.
+      - Go back to the song that played earlier.
+      - Play the music that played before.
+      - Get me the previous tune.
+      - Return to the previous soundtrack.
+      - Play the last music.
+      - Back to the song before this.
+      - Move to the track that came before.
+      - Play the audio from before.
+      - Take me back to the last audio.
+      - Play the previous song in the list.
+      - Go to the previous audio.
+      - Previous music.
+      - Play the last track.
+      - Go back to the previous song in the queue.
+      - Put on the previous tune.
+      - Play the song before this in the playlist.
+      - Return to the previous audio track.
+      - Play the previous soundtrack, please.
+      - Replay the previous audio.
+      - Play the previous song on the list.
+      - Backtrack to the previous melody.
+      - Move to the previous track in the playlist.
+      - Previous song, thanks.
+      - Play the previous song from the album.
+      - Take me to the track that played last.
+      - Go back to the previous audio track.
+      - Play the last melody.
+      - Previous track, thanks.
+      - Play the music that came before this one.
+      - Return to the last song played.
+      - Play the audio prior to this.
+      - Go to the last track.
+      - Play the song that played before this one.
+      - Put on the previous soundtrack.
+      - Play the last song, please.
+      - Previous tune, please.
+      - Rewind to the song before this one.
+      - Get me the previous audio track.
+      - Go back to the last tune.
+      - Play the previous song on repeat.
+      - Play the previous sound from the playlist.
+      - Take me back to the previous song in the queue.
+      - Previous track, now.
+      - Play the previous song in the lineup.
+      - Play the last audio.
+      - Move to the song before this one.
+      - Play the previous song from my library.
+      - Return to the last track.
+      - Play the music that came before.
+      - Previous song, please.
+      - Play the previous melody from the album.
+      - Go back to the previous music in the list.
+      - Put on the last song.
+      - Take me back to the previous song in the playlist.
+      - Play the previous tune on repeat.
+      - Go to the previous soundtrack.
+      - Play the previous audio, please.
+      - Replay the previous melody.
+      - Play the previous song from the artist.
+      - Previous music track.
+      - Play the last track played.
+      - Play the audio that played earlier.
+      - Move to the previous song in the queue.
+      - Play the song from before.
+      - Return to the previous tune in the playlist.
+      - Play the last sound.
+      - Play the track before this one.
+      - Go back to the previous song on the list.
+      - Put on the previous music track.
+      - Take me back to the last melody.
+      - Go to the previous song from the album.
+      - Play the previous audio track now.
+      - Rewind to the last music.
+      - Go back to the song that played before.
+      - Play the previous one on repeat.
+      - Play the previous melody from the artist.
+      - Play the previous soundtrack track.
+      - Previous tune, now.
+      - Play the previous audio from my library.
+      - Return to the previous song on the list.
+      - Play the last music track.
+      - Play the audio from the previous song.
+      - Go to the previous melody in the lineup.
+      - Previous song, now.
+      - Play the previous song on shuffle.
+      - Play the music before this one, please.
+      - Take me to the last soundtrack.
+      - Go back to the previous audio from the playlist.
+      - Put on the previous sound.
+      - Play the track that played earlier.
+      - Move to the previous tune from the album.
+      - Play the previous song, please.
+      - Rewind to the previous melody, please.
+      - Play the last audio from the artist.
+      - Previous track, now please.
+      - Play the previous soundtrack on repeat.
+      - Play the previous music from the lineup.
+      - Play the last melody from my library.
+      - Go back to the previous audio from the artist.
+      - Return to the previous audio from the lineup.
+      - Play the music from the previous song.
+      - Play the previous song from my playlist.
+      - Previous music track, please.
+      - Play the previous sound from the album.
+      - Play the track that played before this one.
+      - Go to the previous melody on shuffle.
+      - Put on the previous song, thanks.
+      - Take me back to the previous tune from my library.
+      - Go back to the last audio from the lineup.
+      - Play the previous song from my queue.
+      - Play the previous soundtrack from my playlist.
+      - Previous tune, now please.
+      - Play the last audio from my lineup.
+      - Play the previous melody on shuffle.
+      - Rewind to the previous music track.
+      - Return to the last audio from the artist.
+      - Play the previous song from my lineup.
+      - Play the music before this one, now.
+      - Play the previous soundtrack from the lineup.
+      - Go to the previous audio from the lineup, please.
+      - Put on the previous sound, thanks.
+      - Take me back to the previous audio from my lineup.
+      - Go back to the previous song from the lineup, please.
+      - Play the previous song from the lineup, thanks.
+      - Previous music track, now please.
+      - Play the previous sound from the lineup, please.
+      - Play the track that played before this one, thanks.
+
+  - intent: CONTINUE
+    examples: |
+      - Continue playing.
+      - Resume playback.
+      - Keep playing.
+      - Continue the music.
+      - Unpause.
+      - Start again.
+      - Carry on.
+      - Continue where I left off.
+      - Resume the song.
+      - Keep the music going.
+      - Play it again.
+      - Don't stop.
+      - Keep the song playing.
+      - Carry on with the music.
+      - Keep the track going.
+      - Don't pause.
+      - Keep it rolling.
+      - Continue the audio.
+      - Keep the melody playing.
+      - Keep the tune going.
+      - Don't interrupt.
+      - Continue with the song.
+      - Don't halt the playback.
+      - Keep the music on.
+      - Don't stop the track.
+      - Keep the song on.
+      - Keep it going.
+      - Don't break the music.
+      - Continue the playback.
+      - Don't pause the music.
+      - Resume where I left off.
+      - Continue the sound.
+      - Continue with the melody.
+      - Keep the audio playing.
+      - Continue the tune.
+      - Keep the track rolling.
+      - Keep it playing.
+      - Continue the song from before.
+      - Don't stop the song.
+      - Keep the melody going.
+      - Continue with the tune.
+      - Keep the audio on.
+      - Keep it going from here.
+      - Don't halt the song.
+      - Continue the music track.
+      - Keep the music flowing.
+      - Keep the music rolling.
+      - Resume the track.
+      - Keep it on.
+      - Continue the audio track.
+      - Don't interrupt the music.
+      - Continue from where I paused.
+      - Keep it going with the song.
+      - Don't break the melody.
+      - Continue from where I stopped.
+      - Keep the sound on.
+      - Keep the music playing from here.
+      - Keep it rolling with the tune.
+      - Resume the audio.
+      - Continue the melody track.
+      - Continue where I left the song.
+      - Keep the tune playing.
+      - Keep the track on.
+      - Keep it going with the melody.
+      - Continue the song from where it stopped.
+      - Keep the audio flowing.
+      - Continue the music from where I paused.
+      - Continue the tune from where I left off.
+      - Keep the melody rolling.
+      - Keep it going from the previous point.
+      - Resume the music.
+      - Continue the sound from where I stopped.
+      - Keep the song playing from where it paused.
+      - Keep the music on from here.
+      - Resume the melody.
+      - Continue the track from where it left off.
+      - Continue the audio from where it stopped.
+      - Keep the tune flowing.
+      - Keep the melody on.
+      - Keep it rolling from where it paused.
+      - Resume from where I left the tune.
+      - Continue the music from where it stopped.
+      - Keep the audio going from the previous point.
+      - Keep the sound flowing.
+      - Continue the melody from where it paused.
+      - Continue the tune from where it left off.
+      - Resume from where I left the melody.
+      - Keep the song on from where it paused.
+      - Resume from where I paused the music.
+      - Continue the music from where it left the melody.
+      - Keep it playing from the previous point.
+      - Resume the audio from where it paused.
+      - Keep the melody playing from where it paused.
+      - Keep the track flowing.
+      - Resume the tune.
+      - Continue from where I left off with the music.
+      - Resume from where I stopped the song.
+      - Keep the audio rolling.
+      - Keep it going from where it left the sound.
+      - Continue the music from where it paused the audio.
+      - Keep the tune on.
+      - Resume from where I paused the melody.
+      - Continue from where I left the audio.
+      - Keep the melody going from where it paused.
+      - Keep it rolling from where it paused the track.
+      - Resume the music from where it stopped the song.
+      - Continue the audio from where it paused the tune.
+      - Resume from where I paused the audio track.
+      - Keep the music on from where it paused the sound.
+      - Resume from where I left the sound.
+      - Continue from where I stopped the melody.
+      - Keep the sound playing from where it paused the music.
+      - Keep it going from where it paused the melody.
+      - Resume from where I left the tune.
+      - Continue the melody from where it paused the track.
+      - Resume from where I paused the melody track.
+      - Keep the song on from where it paused the audio.
+      - Continue from where I left the music.
+      - Resume from where I stopped the audio.
+      - Keep the music playing from where it paused the tune.
+      - Keep it rolling from where it paused the melody.
+      - Resume the audio from where it paused the sound.
+      - Continue from where I paused the music track.
+      - Keep the melody on from where it paused the song.
+      - Resume from where I left the song from before.
+      - Keep the tune playing from where it paused the melody.
+      - Keep it going from where it paused the audio track.
+      - Resume from where I paused the tune from before.
+      - Continue the melody from where it paused the audio.
+      - Resume from where I left the track.
+      - Keep the sound flowing from where it paused the song.
+      - Keep the song rolling from where it paused the tune.
+      - Resume from where I paused the music from before.
+      - Continue the audio from where it paused the sound.
+      - Keep the music on from where it paused the melody track.
+      - Resume from where I left the melody from before.
+      - Continue the tune from where it paused the music.
+      - Resume from where I paused the audio from before.
+      - Keep the melody going from where it paused the audio.
+      - Keep it rolling from where it paused the sound.
+      - Resume from where I left the sound from before.
+
+  - intent: NEXT
+    examples: |
+      - Skip to the next track.
+      - Next song, please.
+      - Move to the next one.
+      - Play the next song.
+      - Skip ahead.
+      - Advance to the next track.
+      - Next music.
+      - Move forward.
+      - Go to the next song.
+      - Jump to the following track.
+      - Play the song after this one.
+      - Skip to the next tune.
+      - Move on to the next song.
+      - Next track, please.
+      - Play the next melody.
+      - Continue to the next track.
+      - Go forward in the playlist.
+      - Play the next sound.
+      - Skip to the song that follows.
+      - Advance to the next melody.
+      - Go forward.
+      - Continue to the next song.
+      - Go ahead.
+      - Move to the next track in the lineup.
+      - Play the next audio.
+      - Jump ahead.
+      - Play the following song.
+      - Skip to the next one in the queue.
+      - Advance to the next audio track.
+      - Next tune, please.
+      - Play the next track now.
+      - Move to the next tune in the playlist.
+      - Go to the following song.
+      - Skip to the next sound.
+      - Move on.
+      - Play the next song on shuffle.
+      - Advance to the next soundtrack.
+      - Go to the next audio.
+      - Continue to the following track.
+      - Skip to the next music track.
+      - Next sound, please.
+      - Play the track that comes next.
+      - Skip to the song after this.
+      - Move to the next melody in the queue.
+      - Play the next one in the lineup.
+      - Go forward with the music.
+      - Play the next melody track.
+      - Continue to the following song in the queue.
+      - Skip ahead in the playlist.
+      - Advance to the next audio in the lineup.
+      - Go to the next sound in the queue.
+      - Play the next tune on repeat.
+      - Jump to the next soundtrack.
+      - Play the following audio.
+      - Continue to the next music.
+      - Skip to the next tune in the lineup.
+      - Move forward in the queue.
+      - Play the following track on shuffle.
+      - Go to the next melody in the lineup.
+      - Advance to the next audio track in the queue.
+      - Play the next music track, please.
+      - Skip to the next sound in the lineup.
+      - Go ahead in the queue.
+      - Continue to the next song on shuffle.
+      - Jump to the next music track.
+      - Play the next soundtrack, please.
+      - Go forward with the melody.
+      - Play the next song on repeat, please.
+      - Move to the next sound in the playlist.
+      - Advance to the next melody track.
+      - Go to the following audio track.
+      - Skip to the next one on shuffle.
+      - Play the next song in the queue.
+      - Continue to the next audio track.
+      - Skip to the next sound on shuffle.
+      - Go to the next music track.
+      - Play the following melody.
+      - Advance to the next soundtrack track.
+      - Jump ahead in the queue.
+      - Play the next sound in the lineup.
+      - Skip to the next tune on shuffle.
+      - Move forward in the lineup.
+      - Play the next melody on repeat.
+      - Go to the next soundtrack in the lineup.
+      - Continue to the next music track.
+      - Skip to the next audio track on shuffle.
+      - Advance to the next melody in the lineup.
+      - Play the following music track.
+      - Jump to the next sound in the queue.
+      - Play the next tune, please.
+      - Go forward in the lineup.
+      - Continue to the next audio in the queue.
+      - Skip ahead in the lineup.
+      - Move to the next soundtrack track.
+      - Play the next audio on shuffle.
+      - Go to the following sound in the lineup.
+      - Play the next sound from the playlist.
+      - Continue to the next melody track.
+      - Skip to the next music track, please.
+      - Advance to the next sound from the lineup.
+      - Play the next song in the lineup, please.
+      - Jump to the next tune in the lineup.
+      - Play the following tune.
+      - Go forward with the tune.
+      - Play the next tune on repeat, please.
+      - Move to the next audio in the lineup.
+      - Advance to the next tune track.
+      - Skip to the next audio from the lineup.
+      - Play the next audio track, please.
+      - Go to the next sound from the playlist.
+      - Continue to the next sound in the queue.
+      - Skip ahead with the music.
+      - Play the next tune on shuffle, please.
+      - Jump to the next sound from the lineup.
+      - Play the next music in the lineup, please.
+      - Continue to the next audio in the lineup.
+      - Skip to the next music track on shuffle.
+      - Advance to the next melody from the lineup.
+      - Go forward with the melody, please.
+      - Play the next music track on repeat, please.
+      - Move to the next sound from the playlist.
+      - Play the following sound.
+      - Skip to the next melody track, please.
+      - Advance to the next music in the queue.
+      - Jump to the next music from the playlist.
+      - Play the next sound on shuffle, please.
+      - Go forward with the sound.
+      - Play the next sound on repeat, please.
+      - Skip to the next sound from the lineup, please.
+
+
+
+  - intent: weather_inquiry
+    examples: |
+      - What's the weather forecast for [Miami](location) tomorrow?
+      - How's the weather in [San Francisco](location) looking this weekend?
+      - Tell me about the weather conditions in [Boston](location) for the next few days.
+      - Can you provide the weather update for [Dubai](location) for the upcoming week?
+      - I'm planning a trip to [Barcelona](location). What's the weather like there next month?
+      - Is it going to be sunny in [Las Vegas](location) this afternoon?
+      - Give me the weather report for [Toronto](location) in the evening.
+      - What's the temperature going to be in [Denver](location) this morning?
+      - I need to know the weather in [Seattle](location) for the next 48 hours.
+      - Will there be any snow in [Stockholm](location) next week?
+      - How's the weather expected to be in [Mumbai](location) during the monsoon season?
+      - Can you check if it's raining in [Cape Town](location) right now?
+      - What's the weather outlook for [Rio de Janeiro](location) this month?
+      - Tell me about the weather conditions in [Shanghai](location) for the coming days.
+      - Is there a chance of thunderstorms in [Houston](location) later this evening?
+      - Give me the weather update for [Dublin](location) this spring.
+      - I'm interested in the weather in [Rome](location) during the autumn season.
+      - Will it be windy in [Sydney](location) tomorrow morning?
+      - How's the weather expected to be in [Amsterdam](location) for the next few weeks?
+      - What's the weather forecast for [Mexico City](location) on my birthday?
+      - Can you provide the weather report for [Athens](location) in the coming months?
+      - Tell me if it's going to be a sunny day in [Copenhagen](location) this Saturday.
+      - I'm curious about the weather conditions in [Seoul](location) during the winter.
+      - Will there be any fog in [San Diego](location) this evening?
+      - Give me the weather update for [Prague](location) in the summer.
+      - What's the weather like in [Vienna](location) for the rest of the day?
+      - Can you check if it's snowing in [Oslo](location) right now?
+      - How's the weather expected to be in [Buenos Aires](location) this year?
+      - What's the weather forecast for [Beijing](location) next week?
+      - Tell me about the weather conditions in [Dubrovnik](location) for my vacation dates.
+      - Is it going to rain in [Edinburgh](location) during the festival?
+      - Give me the weather report for [Auckland](location) in the coming seasons.
+      - I'm planning an outdoor event in [Austin](location). What's the weather outlook for that day?
+      - Will there be any hail in [Helsinki](location) this spring?
+      - How's the weather expected to be in [Singapore](location) during the rainy season?
+      - Can you provide the weather update for [Madrid](location) in the fall?
+      - Tell me if it's going to be a windy day in [Dubai](location) next Wednesday.
+      - I'm interested in the weather conditions in [Hong Kong](location) during typhoon season.
+      - What's the weather forecast for [Montreal](location) in the coming months?
+      - Can you give me the weather report for [Bali](location) this holiday season?
+      - How's the weather expected to be in [Berlin](location) for the upcoming holiday?
+      - What is the weather in [New York](location) today?
+      - How is the weather in [London](location) today?
+      - Tell me the weather forecast for [Los Angeles](location).
+      - What's the weather like in [Paris](location) right now?
+      - Can you give me the weather update for [Sydney](location)?
+      - I want to know the weather conditions in [Berlin](location).
+      - Is it going to rain in [Chicago](location) later today?
+      - Give me the weather report for [Tokyo](location) this week.
+      - What's the weather forecast for [Miami](location) tomorrow?
+      - How's the weather in [San Francisco](location) looking this weekend?
+      - Tell me about the weather conditions in [Boston](location) for the next few days.
+      - Can you provide the weather update for [Dubai](location) for the upcoming week?
+      - I'm planning a trip to [Barcelona](location). What's the weather like there next month?
+      - Is it going to be sunny in [Las Vegas](location) this afternoon?
+      - Give me the weather report for [Toronto](location) in the evening.
+      - What's the temperature going to be in [Denver](location) this morning?
+      - I need to know the weather in [Seattle](location) for the next 48 hours.
+      - Will there be any snow in [Stockholm](location) next week?
+      - How's the weather expected to be in [Mumbai](location) during the monsoon season?
+      - Can you check if it's raining in [Cape Town](location) right now?
+      - What's the weather outlook for [Rio de Janeiro](location) this month?
+      - Tell me about the weather conditions in [Shanghai](location) for the coming days.
+      - Is there a chance of thunderstorms in [Houston](location) later this evening?
+      - Give me the weather update for [Dublin](location) this spring.
+      - I'm interested in the weather in [Rome](location) during the autumn season.
+      - Will it be windy in [Sydney](location) tomorrow morning?
+      - How's the weather expected to be in [Amsterdam](location) for the next few weeks?
+      - What's the weather forecast for [Mexico City](location) on my birthday?
+      - Can you provide the weather report for [Athens](location) in the coming months?
+      - Tell me if it's going to be a sunny day in [Copenhagen](location) this Saturday.
+      - I'm curious about the weather conditions in [Seoul](location) during the winter.
+      - Will there be any fog in [San Diego](location) this evening?
+      - Give me the weather update for [Prague](location) in the summer.
+      - What's the weather like in [Vienna](location) for the rest of the day?
+      - Can you check if it's snowing in [Oslo](location) right now?
+      - How's the weather expected to be in [Buenos Aires](location) this year?
+      - What's the weather forecast for [Beijing](location) next week?
+      - Tell me about the weather conditions in [Dubrovnik](location) for my vacation dates.
+      - Is it going to rain in [Edinburgh](location) during the festival?
+      - Give me the weather report for [Auckland](location) in the coming seasons.
+      - I'm planning an outdoor event in [Austin](location). What's the weather outlook for that day?
+      - Will there be any hail in [Helsinki](location) this spring?
+      - How's the weather expected to be in [Singapore](location) during the rainy season?
+      - Can you provide the weather update for [Madrid](location) in the fall?
+      - Tell me if it's going to be a windy day in [Dubai](location) next Wednesday.
+      - I'm interested in the weather conditions in [Hong Kong](location) during typhoon season.
+      - What's the weather forecast for [Montreal](location) in the coming months?
+      - Can you give me the weather report for [Bali](location) this holiday season?
+      - How's the weather expected to be in [Berlin](location) for the upcoming holiday?
+      - Tell me about the weather conditions in [New Orleans](location) this Mardi Gras.
+      - Is it going to be cloudy in [Los Angeles](location) this evening?
+      - Give me the weather update for [Moscow](location) next weekend.
+      - I'm planning a hike in [Denver](location). What's the weather like on the trails?
+      - Will there be any showers in [Sydney](location) this afternoon?
+      - How's the weather expected to be in [Hawaii](location) during the surfing season?
+      - Can you provide the weather report for [Rio de Janeiro](location) for Carnival?
+      - What's the weather forecast for [Munich](location) during Oktoberfest?
+      - Tell me about the weather conditions in [Edinburgh](location) for the Fringe Festival.
+      - Is it going to be sunny in [Miami Beach](location) this spring break?
+      - Give me the weather update for [Aspen](location) during the ski season.
+      - I'm planning a wedding in [Tuscany](location). What's the weather like in June?
+      - Will there be any thunderstorms in [Florida](location) during hurricane season?
+      - How's the weather expected to be in [Alaska](location) for the Northern Lights viewing?
+      - Can you provide the weather report for [Napa Valley](location) during grape harvesting?
+      - What's the weather forecast for [New York City](location) on New Year's Eve?
+      - Tell me about the weather conditions in [San Diego](location) for Comic-Con.
+
+  - intent: GET_ALBUMS
+    examples: |
+      - Show me my albums.
+      - List my music albums.
+      - Retrieve my album collection.
+      - Display my album list.
+      - What are my music albums?
+      - List albums in my library.
+      - Get my album catalog.
+      - Show my album assortment.
+      - List my music collections.
+      - Fetch my albums.
+      - Present my album selection.
+      - Show my album inventory.
+      - I want to see my albums.
+      - Can you list my music albums?
+      - Provide my album list.
+      - Display my album archive.
+      - Show my album repertoire.
+      - List my albums, please.
+      - Get my music album inventory.
+      - Retrieve my albums, please.
+      - Share my album collection.
+      - Catalog my music albums.
+      - Give me a list of albums.
+      - Show the albums I have.
+      - List my album assortment.
+      - Get my music album list.
+      - Present my albums.
+      - Show my album stock.
+      - What albums do I own?
+      - List my album collection.
+      - Retrieve my music albums.
+      - Display my albums.
+      - Can you show my albums?
+      - List my album inventory.
+      - Get my music album collection.
+      - Present my album catalog.
+      - What's in my album collection?
+      - Give me my albums.
+      - Show albums in my library.
+      - List my music album catalog.
+      - Fetch my music albums.
+      - Present my music album assortment.
+      - Show my album selections.
+      - Display my album catalog.
+      - Show my music albums.
+      - What albums are in my library?
+      - Provide a list of my albums.
+      - Retrieve my album archive.
+      - List albums in my collection.
+      - Get my music album assortment.
+      - Show my album assortment, please.
+      - Can you list my albums?
+      - Display my music albums.
+      - List my album stock, please.
+      - Get my album catalog, please.
+      - Present my music albums.
+      - Show my album inventory, please.
+      - What albums do I have?
+      - Give me a list of my music albums.
+      - Retrieve my album repertoire.
+      - List my album assortment, please.
+      - Fetch my music album list.
+      - Show my album catalog, please.
+      - Provide my music albums.
+      - Display my album selection, please.
+      - Show me my music album inventory.
+      - List my album stock, please.
+      - Get my album selection, please.
+      - Present my album stock, please.
+      - What albums are in my collection?
+      - Can you show me my album list?
+      - Retrieve my music album selection.
+      - List my music album assortment.
+      - Fetch my album collection.
+      - Show my music album stock.
+      - Display my album assortment, please.
+      - Show my album catalog, please.
+      - List my music album selection.
+      - Get my album inventory, please.
+      - Present my music album inventory.
+      - Show my album selection, please.
+      - Display my music album selection.
+      - List my album repertoire, please.
+      - Show me my album assortment.
+      - Can you list my album assortment?
+      - Provide my album stock, please.
+      - Retrieve my album stock, please.
+      - List my album inventory, please.
+      - Fetch my music album assortment.
+      - Show my music album catalog.
+      - Display my music album repertoire.
+      - List my album selection, please.
+      - Get my album stock, please.
+      - Present my album inventory, please.
+      - Show me my album repertoire.
+      - Can you show my album selections?
+      - Retrieve my album catalog, please.
+      - List my album stock.
+      - Get my music album stock.
+      - Provide my album catalog, please.
+      - Display my album stock, please.
+      - Show my album repertoire, please.
+      - List my music album inventory, please.
+      - Fetch my album selection, please.
+      - Show my album inventory, please.
+      - Display my album repertoire, please.
+      - Show me my music album assortment.
+      - Can you list my music album selection?
+      - Retrieve my music album catalog, please.
+      - List my album catalog.
+      - Get my album assortment, please.
+      - Present my album stock.
+      - Show my album stock, please.
+      - List my music album stock, please.
+      - Fetch my album repertoire, please.
+      - Display my album catalog, please.
+      - Show me my album selection.
+      - Can you list my album repertoire?
+      - Provide my music album stock, please.
+      - Retrieve my album inventory.
+      - List my music album repertoire.
+      - Get my music album assortment, please.
+      - Present my music album assortment.
+      - Show my album catalog.
+      - Display my album assortment.
+      - List my album selection.
+      - Fetch my music album selection.
+      - Show my music album inventory, please.
+      - Display my music album selection, please.
+      - Retrieve my album stock.
+      - List my album catalog, please.
+      - Get my album repertoire, please.
+      - Provide my album repertoire.
+      - Show my music album stock, please.
+      - Display my music album stock, please.
+      - List my music album assortment, please.
+      - Fetch my album inventory, please.
+      - Show my music album catalog, please.
+      - Display my music album repertoire, please.
+      - List my music album stock.
+      - Get my music album inventory, please.
+      - Provide my music album assortment, please.
+      - Retrieve my music album stock.
+      - Show my music album assortment, please.
+      - List my music album catalog, please.
+      - Fetch my music album repertoire.
+      - Display my music album inventory.
+      - Show my music album selection.
+      - Can you list my music album catalog?
+      - Retrieve my music album selection, please.
+      - List my music album inventory, please.
+      - Get my music album repertoire.
+      - Provide my music album stock.
+      - Show my music album stock.
+      - Display my music album stock.
+      - List my music album assortment.
+      - Fetch my music album selection.
+      - Show my music album catalog.
+      - Display my music album repertoire.
+      - List my music album inventory.
+      - Get my music album selection.
+      - Provide my music album catalog.
+      - Retrieve my music album repertoire.
+      - Show my music album inventory, please.
+      - Display my music album selection, please.
+      - List my music album stock, please.
+      - Fetch my music album catalog, please.
+      - Show my music album stock, please.
+      - Display my music album stock, please.
+      - List my music album assortment, please.
+      - Fetch my music album repertoire, please.
+      - Display my music album inventory, please.
+      - Show my music album catalog, please.
+      - Get my music album assortment.
+      - Retrieve my music album stock, please.
+      - List my music album catalog.
+      - Provide my music album repertoire, please.
+
+  - intent: GET_TRACKS
+    examples: |
+      - Get my music tracks.
+      - Show me the tracks in my library.
+      - List all tracks.
+      - Fetch my tracks.
+      - Display my track list.
+      - What are my music tracks?
+      - List tracks in my collection.
+      - Retrieve my track catalog.
+      - Show my track assortment.
+      - List my music song collections.
+      - Fetch my music tracks.
+      - Present my track selection.
+      - Show my track inventory.
+      - I want to see my music tracks.
+      - Can you list my tracks?
+      - Provide my song list.
+      - Display my track archive.
+      - Show my track repertoire.
+      - List my songs, please.
+      - Get my music track inventory.
+      - Retrieve my tracks, please.
+      - Share my track collection.
+      - Catalog my music tracks.
+      - Give me a list of tracks.
+      - Show the tracks I have.
+      - List my song assortment.
+      - Get my music song list.
+      - Present my tracks.
+      - Show my track stock.
+      - What tracks do I own?
+      - List my track collection.
+      - Retrieve my music tracks.
+      - Display my tracks.
+      - Can you show my tracks?
+      - List my track inventory.
+      - Get my music song collection.
+      - Present my track catalog.
+      - What's in my track collection?
+      - Give me my tracks.
+      - Show tracks in my library.
+      - List my music song catalog.
+      - Fetch my music tracks.
+      - Present my music song assortment.
+      - Show my track selections.
+      - Display my track catalog.
+      - Show my music tracks.
+      - What tracks are in my library?
+      - Provide a list of my tracks.
+      - Retrieve my track archive.
+      - List tracks in my collection.
+      - Get my music track assortment.
+      - Show my track assortment, please.
+      - Can you list my tracks?
+      - Display my music tracks.
+      - List my track stock, please.
+      - Get my track catalog, please.
+      - Present my music tracks.
+      - Show my track inventory, please.
+      - What tracks do I have?
+      - Give me a list of my music tracks.
+      - Retrieve my track repertoire.
+      - List my track assortment, please.
+      - Fetch my music track list.
+      - Show my track catalog, please.
+      - Provide my music tracks.
+      - Display my track selection, please.
+      - Show me my music track inventory.
+      - List my track stock, please.
+      - Get my track selection, please.
+      - Present my track stock, please.
+      - What tracks are in my collection?
+      - Can you show me my track list?
+      - Retrieve my music track selection.
+      - List my music track assortment.
+      - Fetch my track collection.
+      - Show my music track stock.
+      - Display my track assortment, please.
+      - Show my track catalog, please.
+      - List my music track selection.
+      - Get my track inventory, please.
+      - Present my music track inventory.
+      - Show my track selection, please.
+      - Display my music track selection, please.
+      - Retrieve my track stock.
+      - List my track catalog, please.
+      - Get my track repertoire, please.
+      - Provide my track repertoire.
+      - Show my music track stock, please.
+      - Display my music track stock, please.
+      - List my music track assortment, please.
+      - Fetch my track inventory, please.
+      - Show my music track catalog, please.
+      - Display my music track repertoire, please.
+      - List my music track stock.
+      - Get my music track inventory, please.
+      - Provide my music track assortment, please.
+      - Retrieve my music track stock.
+      - Show my
+
+  - intent: GET_FOLLOWING
+    examples: |
+      - Get the next song.
+      - Play the next track.
+      - Advance to the next song.
+      - Skip to the following track.
+      - Go to the next song.
+      - Play the next song in the queue.
+      - Play the next item.
+      - Next track, please.
+      - Skip to the next song in the playlist.
+      - Move to the following track.
+      - Continue with the next song.
+      - Next music track.
+      - Play the song after this.
+      - Play the following song.
+      - Continue with the next track.
+      - Play the next music item.
+      - Skip to the next tune.
+      - Advance to the next track in the queue.
+      - Play the next song on the list.
+      - Go forward to the next song.
+      - Play the track that follows.
+      - What's the next song?
+      - What song is up next?
+      - Which track is after this one?
+      - What's playing next?
+      - Tell me the next song.
+      - Show me the next track.
+      - I want to hear the next song.
+      - Can you play the following track?
+      - Play the track coming up next.
+      - What's queued after this song?
+      - Continue with the next music track.
+      - Play the song that follows this one.
+      - Skip to the song after this.
+      - Move on to the next track.
+      - What's the next tune?
+      - Next song in the playlist.
+      - Advance to the next tune.
+      - Continue with the next music item.
+      - Play the next song, please.
+      - What's the next track in the playlist?
+      - What's the next music item?
+      - Go to the following tune.
+      - Play the next music selection.
+      - Skip to the next song, please.
+      - Continue with the next music selection.
+      - Next in the queue.
+      - Play the next song on the playlist.
+      - What's next in the queue?
+      - Play the next tune, please.
+      - Play the track after this one.
+      - Skip to the following song in the playlist.
+      - Go forward with the next song.
+      - What's coming up next in the playlist?
+      - Play the following item.
+      - Play the next item in the queue.
+      - Next track, please.
+      - What's on deck?
+      - Skip to the next music item.
+      - What's the following song?
+      - Play the next track coming up.
+      - What's the upcoming song?
+      - Play the next music track in the queue.
+      - Move on to the following track.
+      - Play the next song in line.
+      - Skip to the next music selection.
+      - Advance to the next song on the list.
+      - What's in line after this song?
+      - Play the song in the queue after this.
+      - What's up next in the playlist?
+      - Next music track in the queue.
+      - Skip to the next music track on the list.
+      - Play the track in line after this one.
+      - Continue with the next tune on the playlist.
+      - What's next in the music queue?
+      - Play the next song on the queue.
+      - What's playing next in the playlist?
+      - Next song on the playlist, please.
+      - Skip to the next tune, please.
+      - Play the next music selection, please.
+      - Play the track that's next in line.
+      - Continue with the next song on the queue.
+      - Next track on the playlist.
+      - What's next in the playlist?
+      - Play the music track after this one.
+      - Skip to the following tune, please.
+      - Go forward to the next music selection.
+      - Play the next song, if you would.
+      - What's up next in the music queue?
+      - Play the next track that's queued.
+      - Advance to the following song on the playlist.
+      - Continue with the next music item in line.
+      - What's queued after this track?
+      - Play the music selection that follows.
+      - Skip to the song that's next in line.
+      - What's next in the music lineup?
+      - Play the following track, please.
+      - Play the next song coming up.
+      - What's in the queue after this tune?
+      - Play the next music track, please.
+      - Continue with the following song.
+      - Play the next item on the playlist.
+      - Skip to the next music track, please.
+      - What's next in the song queue?
+      - Play the track that's up next.
+
+  - intent: GET_PLAYER
+    examples: |
+      - What song is currently on?
+      - Please let me know the current song.
+      - Share the details of the song that's on.
+      - Give me information about the music that's currently playing.
+      - What's the title of the current track?
+      - What's the artist of the song that's currently playing?
+      - Who's the artist of the current song?
+      - What's the current song title?
+      - INFO ABOUT THE SONG
+      - Give me info
+      - Tell me about the music currently on air.
+      - Give me information about the song that's currently playing on the computer screen.
+      - What's the title of the song that's currently playing on the laptop speakers?
+      - Share details about the song that's currently playing on the desktop monitor.
+      - What's the song title of the song that's currently on this machine?
+      - What's the name of the song that's currently playing?
+      - Identify the track that's currently on your
+
+  - intent: PAUSE
+    examples: |
+      - Pause the music.
+      - Stop playing.
+      - Halt the playback.
+      - Pause the song.
+      - Cease playback.
+      - Put the music on hold.
+      - Pause the audio.
+      - Stop the music.
+      - Pause the track.
+      - End playback.
+      - Hush the music.
+      - Suspend the song.
+      - Bring the music to a halt.
+      - Hold the playback.
+      - Pause the current track.
+      - Cease the music.
+      - Stop the audio.
+      - Pause this song.
+      - Halt the song.
+      - Suspend playback.
+      - Quiet the music.
+      - Pause that track.
+      - End the playback.
+      - Put a stop to the music.
+      - Pause this tune.
+      - Stop that song.
+      - Halt that music.
+      - Suspend the audio.
+      - Pause the current song.
+      - Cease that playback.
+      - Stop that track.
+      - Silence the music.
+      - Pause the playing.
+      - End that song.
+      - Pause the sound.
+      - Put an end to the playback.
+      - Halt that track.
+      - Suspend that song.
+      - Quiet that music.
+      - Pause the current audio.
+      - Stop that tune.
+      - Cease that track.
+      - Silence that song.
+      - Pause the current tune.
+      - Hush that track.
+      - Suspend that track.
+      - End that music.
+      - Stop that audio.
+      - Pause that sound.
+      - Cease that tune.
+      - Quiet that track.
+      - Put a stop to that song.
+      - Halt that audio.
+      - Suspend that audio.
+      - Pause that playing.
+      - End that tune.
+      - Stop that sound.
+      - Hush that music.
+      - Pause that audio.
+      - Cease that sound.
+      - Put an end to that tune.
+      - Suspend that sound.
+      - Quiet that audio.
+      - Halt that sound.
+      - Silence that audio.
+      - Pause that sound.
+      - End that sound.
+      - Stop that track right now.
+      - Cease that audio.
+      - Quiet that sound.
+      - Suspend that tune.
+      - Halt that tune.
+      - Pause that track right now.
+      - Stop that tune immediately.
+      - Cease that sound right away.
+      - Put a stop to that sound.
+      - Silence that track now.
+      - Pause the music instantly.
+      - Stop the audio right away.
+      - End the tune now.
+      - Halt the sound immediately.
+      - Suspend the track right now.
+      - Quiet the audio instantly.
+      - Pause the song right now.
+      - Cease the tune right away.
+      - Pause the track right away.
+      - Stop the song immediately.
+      - Put an end to the song now.
+      - Silence the audio right away.
+      - Halt the tune right now.
+      - Suspend the sound immediately.
+      - Quiet the sound right away.
+      - Pause the music immediately.
+      - End the sound right away.
+      - Cease the track right now.
+      - Stop the sound right away.
+      - Hush the sound immediately.
+      - Silence the sound right away.
+
+  - intent: NEXT
+    examples: |
+      - Play the next track.
+      - Skip to the next song.
+      - Go forward in the playlist.
+      - Move to the following track.
+      - Advance to the next song.
+      - Play the next item.
+      - Next track, please.
+      - Skip to the next song in the queue.
+      - Play the song after this.
+      - Play the following song.
+      - Continue with the next song.
+      - Play the next music item.
+      - Skip to the next tune.
+      - Advance to the next track in the queue.
+      - Play the next song on the list.
+      - Go forward to the next song.
+      - Play the track that follows.
+      - What's the next song?
+      - What song is up next?
+      - Which track is after this one?
+      - What's playing next?
+      - Tell me the next song.
+      - Show me the next track.
+      - I want to hear the next song.
+      - Can you play the following track?
+      - Play the track coming up next.
+      - What's queued after this song?
+      - Continue with the next music track.
+      - Play the song that follows this one.
+      - Skip to the song after this.
+      - Move on to the next track.
+      - What's the next tune?
+      - Next song in the playlist.
+      - Advance to the next tune.
+      - Continue with the next music item.
+      - Play the next song, please.
+      - What's the next track in the playlist?
+      - What's the next music item?
+      - Go to the following tune.
+      - Play the next music selection.
+      - Skip to the next song, please.
+      - Continue with the next music selection.
+      - Next in the queue.
+      - Play the next song on the playlist.
+      - What's next in the queue?
+      - Play the next tune, please.
+      - Play the track after this one.
+      - Skip to the following song in the playlist.
+      - Go forward with the next song.
+      - What's coming up next in the playlist?
+      - Play the following item.
+      - Play the next item in the queue.
+      - Next track, please.
+      - What's on deck?
+      - Skip to the next music item.
+      - What's the following song?
+      - Play the next track coming up.
+      - What's the upcoming song?
+      - Play the next music track in the queue.
+      - Move on to the following track.
+      - Play the next song in line.
+      - Skip to the next music selection.
+      - Advance to the next song on the list.
+      - What's in line after this song?
+      - Play the song in the queue after this.
+      - What's up next in the playlist?
+      - Next music track in the queue.
+      - Skip to the next music track on the list.
+      - Play the track in line after this one.
+      - Continue with the next tune on the playlist.
+      - What's next in the music queue?
+      - Play the next song on the queue.
+      - What's playing next in the playlist?
+      - Next song on the playlist, please.
+      - Skip to the next tune, please.
+      - Play the next music selection, please.
+      - Play the track that's next in line.
+
+
+  - intent: PREVIOUS
+    examples: |
+      - Play the previous track.
+      - Go back to the previous song.
+      - Rewind the playlist.
+
+  - intent: CONTINUE
+    examples: |
+      - Continue playing.
+      - Resume the music.
+      - Play.
+
+  - intent: information_request_question
+    examples: |
+      - What can you tell me about [the World Wide Web](content)?
+      - intent: information_request_question
+      - What can you tell me about [the World Wide Web](content)?
+      - Tell me about [internet protocols](content).
+      - Explain [cloud computing](content) to me.
+      - What is [cyberbullying](content)?
+      - Provide information on [online marketplaces](content).
+      - Where can I find [reliable news sources](content)?
+      - Can you recommend [podcasts](content) on technology?
+      - Tell me about [online courses](content) for photography.
+      - Where can I watch [science documentaries](content) online?
+      - How can I access [open-source software](content)?
+      - What are some popular [web hosting services](content)?
+      - Can you recommend [collaboration tools](content) for remote teams?
+      - Where can I find [virtual event platforms](content)?
+      - What are the best [video conferencing apps](content)?
+      - Can you suggest [online design tools](content)?
+      - What's the latest trend in [social media](content)?
+      - Tell me about [viral internet challenges](content).
+      - Can you provide information on [upcoming tech conferences](content)?
+      - What are the current [cybersecurity threats](content)?
+      - Where can I find updates on [cryptocurrency trends](content)?
+      - Are there any active [fitness communities](content) online?
+      - Can you recommend [coding forums](content) to join?
+      - Tell me about popular [gaming communities](content).
+      - Where can I find [traveler forums](content)?
+      - Are there any [cooking communities](content) online?
+      - What time is it now?
+      - Could you please tell me the time?
+      - Do you have the current time?
+      - What's the time at the moment?
+      - Can you inform me about the current time?
+      - I'd like to know the time. What is it?
+      - Please provide me with the time right now.
+      - What is the time according to your clock?
+      - Tell me the time, if you don't mind.
+      - Could you give me the time, please?
+      - I'm curious about the time. Can you share it?
+      - What's the time of day?
+      - May I know the time right now?
+      - Inform me about the current time, please.
+      - I want to check the time. What is it?
+      - What is the present time?
+      - Tell me what time it is.
+      - Share the current time with me.
+      - Can you provide the time, please?
+      - I need to know the time. What time is it?
+      - Do you have the time available?
+      - What's the time on your clock?
+      - Please share the time with me now.
+      - Could you inform me about the time?
+      - What time are we at now?
+      - Let me know the time.
+      - I'm looking for the current time. What is it?
+      - What time is displayed?
+      - Tell me the time, please.
+      - Can you tell me the time of day?
+      - I'd like to know the time now. What is it?
+      - What time do you have there?
+      - Share the time with me.
+      - I'm interested in the time. What time is it?
+      - What time is it showing?
+      - Provide me with the time, please.
+      - Tell me the present time.
+      - Could you inform me of the time?
+      - What's the time at your location?
+      - What time do you see?
+      - I want to find out the time. What is it?
+      - Can you display the time?
+      - Please let me know the time.
+      - Could you tell me the time right now?
+      - What is the time currently?
+      - Share the current time with me, please.
+      - Inform me about the time, if you can.
+      - I'm inquiring about the time. What time is it?
+      - What time do you have on your clock?
+      - Can you provide the time?
+      - Tell me the time, please.
+      - May I know the time of day?
+      - I'd like to know the time now.
+      - What's the time according to your clock?
+      - Share the time with me, please.
+      - Can you tell me the time right now?
+      - I'm curious about the time. What time is it?
+      - What time is displayed?
+      - Please inform me about the time.
+      - What time are we at now?
+      - Let me know the time.
+      - I'm looking for the current time. What is it?
+      - What time do you have there?
+      - Provide me with the time, please.
+      - Tell me the present time.
+      - Could you inform me of the time?
+      - What's the time at your location?
+      - What time do you see?
+      - I want to find out the time. What is it?
+      - Can you display the time?
+      - Please let me know the time.
+      - Could you tell me the time right now?
+      - What is the time currently?
+      - Share the current time with me, please.
+      - Inform me about the time, if you can.
+      - I'm inquiring about the time. What time is it?
+      - What time do you have on your clock?
+      - Can you provide the time?
+      - Tell me the time, please.
+      - May I know the time of day?
+      - I'd like to know the time now.
+      - What's the time according to your clock?
+      - Share the time with me, please.
+      -  Who is Albert Einstein?
+      - Who is Queen Elizabeth II?
+      - Who is Leonardo da Vinci?
+      - Who is Elon Musk?
+      - Who is Nelson Mandela?
+      - Who is Oprah Winfrey?
+      - Who is Martin Luther King Jr.?
+      - Who is Bill Gates?
+      - Who is Marie Curie?
+      - Who is Mahatma Gandhi?
+      - Who is Steve Jobs?
+      - Who is Vladimir Putin?
+      - Who is Mother Teresa?
+      - Who is George Washington?
+      - Who is Winston Churchill?
+      - Who is Mark Zuckerberg?
+      - Who is Pablo Picasso?
+      - Who is Amelia Earhart?
+      - Who is Charles Darwin?
+      - Who is Frida Kahlo?
+      - Who is Stephen Hawking?
+      - Who is Neil Armstrong?
+      - Who is Coco Chanel?
+      - Who is Che Guevara?
+      - Who is Malala Yousafzai?
+      - Who is Sigmund Freud?
+      - Who is Rosa Parks?
+      - Who is William Shakespeare?
+      - Who is Cristiano Ronaldo?
+      - Who is Barack Obama?
+      - Who is Thomas Edison?
+      - Who is Cleopatra?
+      - Who is Julius Caesar?
+      - Who is Anne Frank?
+      - Who is Henry Ford?
+      - Who is Alexander the Great?
+      - Who is Beethoven?
+      - Who is Amelia Earhart?
+      - Who is Amelia Earhart?
+      - Who is Marie Antoinette?
+      - Who is Amelia Earhart?
+      - Who is Queen Victoria?
+      - Who is Amelia Earhart?
+      - Who is Christopher Columbus?
+      - Who is Albert Camus?
+      - Who is Jeff Bezos?
+      - Who is Julius Caesar?
+      - Who is Harriet Tubman?
+      - Who is Amelia Earhart?
+      - Who is Isaac Newton?
+  - lookup: content
+    examples: |
+      - Articles on machine learning
+      - Technology news websites
+      - Educational videos on physics
+      - Blog posts about travel destinations
+      - DIY woodworking tutorials
+      - Scientific research papers
+      - Podcasts on self-improvement
+      - Cooking recipes and tutorials
+      - Online coding courses
+      - Reviews of the latest gadgets
+      - Fashion and style blogs
+      - Financial planning guides
+      - Online art galleries and exhibitions
+      - History documentaries
+      - Health and wellness forums
+      - Fantasy fiction novels
+      - Social media influencers' content
+      - Political analysis articles
+      - Sports highlights and analysis
+      - Music streaming platforms
+      - Gardening tips and advice
+      - Technology product reviews
+      - Online language learning courses
+      - Travel vlogs and documentaries
+      - Fitness and exercise routines
+      - Entertainment industry news
+      - Home improvement and renovation guides
+      - Online gaming communities
+      - Automotive repair tutorials
+      - Environmental sustainability blogs
+      - Photography tutorials and tips
+      - Business and entrepreneurship resources
+      - Web development tutorials and courses
+      - Health and nutrition articles
+      - Movie and TV show reviews
+      - Art and design inspiration
+      - Career advice and job search tips
+      - Parenting and child-rearing forums
+      - Science and space exploration articles
+      - Sustainable living practices
+      - Music production tutorials
+      - Travel planning and itinerary guides
+      - Historical documentaries and series
+      - Cooking and culinary blogs
+      - Gaming news and updates
+      - Home decor and interior design ideas
+      - Technology podcasts and interviews
+      - Language and culture immersion programs
+      - Adventure and outdoor exploration blogs
+      - DIY arts and crafts projects
+      - Political debates and discussions
+      - Sports statistics and analysis reports
+      - Music artist interviews and profiles
+      - Gardening and landscaping design tips
+      - Technology trends and innovations
+      - Virtual reality and augmented reality experiences
+      - Fitness challenges and workout plans
+      - Entertainment industry interviews
+      - Fashion and beauty product reviews
+      - Financial investment strategies and tips
+      - Literature and book reviews
+      - Art and photography exhibitions
+      - Professional development courses and workshops
+      - Coding challenges and competitions
+      - Health and wellness product recommendations
+      - Movie and TV show recommendations
+      - Online communities for creative writing
+      - Parenting advice and support groups
+      - Space exploration news and discoveries
+      - Environmental conservation initiatives
+      - Music concerts and live performances
+      - Travel photography galleries
+      - Historical reenactments and documentaries
+      - Gourmet cooking recipes and tutorials
+      - Gaming walkthroughs and strategy guides
+      - Automotive maintenance and repair tips
+      - Sustainable living lifestyle blogs
+      - Music composition and production software
+      - Travel destination reviews and recommendations
+      - Political opinion pieces and editorials
+      - Sports events and tournament coverage
+      - Music festival highlights and reviews
+      - Gardening and plant care guides
+      - Emerging technology news and updates
+
+  - lookup: location
+    examples: |
+      - Bolivia
+      - London
+      - Argentina
+      - France
+      - New York
+      - Brazil
+      - Tokyo
+      - Canada
+      - Sydney
+      - Italy
+      - Los Angeles
+      - India
+      - Berlin
+      - Australia
+      - Mexico
+      - Beijing
+      - Spain
+      - Chicago
+      - South Africa
+      - Dubai
+      - Russia
+      - Singapore
+      - Greece
+      - San Francisco
+      - Egypt
+      - Amsterdam
+      - Switzerland
+      - Hong Kong
+      - Sweden
+      - Istanbul
+      - Norway
+      - Abu Dhabi
+      - Netherlands
+      - Thailand
+      - Seoul
+      - Denmark
+      - Vietnam
+      - Shanghai
+      - Portugal
+      - Houston
+      - Malaysia
+      - Riyadh
+      - Austria
+      - Toronto
+      - Finland
+      - Vancouver
+      - Belgium
+      - Budapest
+      - Czech Republic
+      - Poland
+      - Chile
+      - Peru
+      - Kenya
+      - Morocco
+      - Saudi Arabia
+      - Qatar
+      - Kuwait
+      - Oman
+      - Jordan
+      - Lebanon
+      - Greece
+      - Cyprus
+      - New Zealand
+      - Ireland
+      - Wales
+      - Scotland
+      - Northern Ireland
+      - Wales
+      - United Arab Emirates
+      - Ukraine
+      - Romania
+      - Bulgaria
+      - Croatia
+      - Serbia
+      - Bosnia and Herzegovina
+      - Montenegro
+      - Slovenia
+      - Slovakia
+      - Hungary
+      - Austria
+      - Switzerland
+      - Liechtenstein
+      - Luxembourg
+      - Monaco
+      - Andorra
+      - Vatican City
+      - Malta
+      - Gibraltar
+      - Iceland
+      - Faroe Islands
+      - Greenland
+      - Bermuda
+      - Bahamas
+      - Jamaica
+      - Cuba
+      - Puerto Rico
+      - Dominican Republic
+      - Haiti
+      - Barbados
+      - Trinidad and Tobago
+      - Grenada
+      - Saint Lucia
+      - Saint Vincent and the Grenadines
+      - Antigua and Barbuda
+      - Saint Kitts and Nevis
+      - Dominica
+      - Saint Martin
+      - Saint Barthelemy
+      - Aruba
+      - Curacao
+      - Bonaire
+      - Sint Maarten
+      - Suriname
+      - Guyana
+      - French Guiana
+      - Venezuela
+      - Colombia
+      - Ecuador
+      - Peru
+      - Bolivia
+      - Paraguay
+      - Uruguay
+      - Chile
+      - Falkland Islands
+      - Costa Rica
+      - Nicaragua
+      - Honduras
+      - El Salvador
+      - Guatemala
+      - Belize
+      - Panama
+      - Venezuela
+      - Colombia
+      - Ecuador
+      - Peru
+      - Bolivia
+      - Paraguay
+      - Uruguay
+      - Chile
+      - Falkland Islands
+      - Costa Rica
+      - Nicaragua
+      - Honduras
+      - El Salvador
+      - Guatemala
+      - Belize
+      - Panama
+      - Venezuela
+      - Colombia
+      - Ecuador
+      - Peru
+      - Bolivia
+      - Paraguay
+      - Uruguay
+      - Chile
+      - Falkland Islands
+      - Costa Rica
+      - Nicaragua
+      - Honduras
+      - El Salvador
+      - Guatemala
+      - Belize
+      - Panama
+      - Venezuela
+      - Colombia
+      - Ecuador
+      - Peru
+      - Bolivia
+      - Paraguay
+      - Uruguay
+      - Chile
+      - Falkland Islands
+      - Costa Rica
+      - Nicaragua
+      - Honduras
+      - El Salvador
+      - Guatemala
+      - Belize
+      - Panama
+      - Venezuela
+      - Colombia
+      - Ecuador
+      - Peru
+      - Bolivia
+      - Paraguay
+      - Uruguay
+      - Chile
+      - Falkland Islands
+      - Costa Rica
+      - Nicaragua
+      - Honduras
+      - El Salvador
+      - Guatemala
+      - Belize
+      - Panama
+      - Venezuela
+      - Colombia
+      - Ecuador
+      - Peru
+      - Bolivia
+      - Paraguay
+      - Uruguay
+      - Chile
+      - Falkland Islands
+      - Costa Rica
+      - Nicaragua
+      - Honduras
+      - El Salvador
+      - Guatemala
+      - Belize
+      - Panama
+      - Venezuela
+      - Colombia
+      - Ecuador
+      - Peru
+      - Bolivia
+      - Paraguay
+      - Uruguay
+      - Chile
+      - Falkland Islands
+      - Costa Rica
+      - Nicaragua
+      - Honduras
+      - El Salvador
+      - Guatemala
+      - Belize
+      - Panama
+
+
+
+  - intent: location_inquiry
+    examples: |
+      - Where is [Bolivia](location)?
+      - Where is located [Bolivia](location)?
+      - Can you tell me the location of [London](location)?
+      - I'm curious about the whereabouts of [Paris](location).
+      - What's the geographical position of [New York](location)?
+      - Do you know where [Tokyo](location) is located?
+      - Please inform me about the location of [Sydney](location).
+      - Where can I find [Rome](location) on the map?
+      - What is the address of [Los Angeles](location)?
+      - Tell me the coordinates of [Berlin](location).
+      - Could you locate [Moscow](location) for me?
+      - Give me the whereabouts of [Beijing](location).
+      - What's the precise location of [Madrid](location)?
+      - I'd like to know the place of [Dubai](location).
+      - Where exactly is [Cairo](location) situated?
+      - Please provide the location of [Athens](location).
+      - What's the physical position of [Vienna](location)?
+      - Tell me where to find [Lisbon](location).
+      - Can you give me the location of [Stockholm](location)?
+      - Where on Earth is [Helsinki](location)?
+      - Inform me about the location of [Oslo](location).
+      - Where can I locate [Prague](location)?
+      - Please tell me the exact location of [Brussels](location).
+      - What are the coordinates of [Warsaw](location)?
+      - Give me the location details for [Amsterdam](location).
+      - I'd like to know where [Bern](location) is.
+      - Could you provide the location of [Luxembourg](location)?
+      - What's the geographic position of [Moscow](location)?
+      - Tell me the precise location of [Kiev](location).
+      - Where can I find [Minsk](location) on a map?
+      - What's the exact location of [Budapest](location)?
+      - Can you inform me about the whereabouts of [Belgrade](location)?
+      - Please provide the coordinates of [Sofia](location).
+      - What is the address of [Bucharest](location)?
+      - Tell me the location of [Zagreb](location).
+      - Where is [Vienna](location) situated on the globe?
+      - What's the exact geographical position of [Berlin](location)?
+      - Do you know where [Prague](location) is located?
+      - Please tell me the location of [Warsaw](location).
+      - Where can I find [Amsterdam](location) on a map?
+      - What's the geographic position of [Brussels](location)?
+      - Give me the location details for [Lisbon](location).
+      - I'd like to know where [Athens](location) is.
+      - Could you provide the location of [Stockholm](location)?
+      - What are the coordinates of [Helsinki](location)?
+      - Tell me the precise location of [Oslo](location).
+      - Where can I locate [Copenhagen](location)?
+      - Please tell me the exact location of [Dublin](location).
+      - What is the address of [London](location)?
+      - Tell me the location of [Edinburgh](location).
+      - Where is [Madrid](location) situated on the globe?
+      - What's the exact geographical position of [Paris](location)?
+      - Do you know where [Rome](location) is located?
+      - Please tell me the location of [Barcelona](location).
+      - Where can I find [Berlin](location) on a map?
+      - What's the geographic position of [Vienna](location)?
+      - Give me the location details for [Prague](location).
+      - I'd like to know where [Budapest](location) is.
+      - Could you provide the location of [Zurich](location)?
+      - What are the coordinates of [Warsaw](location)?
+      - Tell me the precise location of [Amsterdam](location).
+      - Where is [Brussels](location) situated on the globe?
+      - What's the exact geographical position of [Lisbon](location)?
+      - Do you know where [Athens](location) is located?
+      - Please tell me the location of [Stockholm](location).
+      - What is the address of [Helsinki](location)?
+      - Tell me the location of [Oslo](location).
+      - Where can I locate [Copenhagen](location)?
+      - Please tell me the exact location of [Dublin](location).
+      - What is the address of [London](location)?
+      - Tell me the location of [Edinburgh](location).
+      - Where is [Madrid](location) situated on the globe?
+      - What's the exact geographical position of [Paris](location)?
+      - Do you know where [Rome](location) is located?
+      - Please tell me the location of [Barcelona](location).
+      - Where can I find [Berlin](location) on a map?
+      - What's the geographic position of [Vienna](location)?
+      - Give me the location details for [Prague](location).
+      - I'd like to know where [Budapest](location) is.
+      - Could you provide the location of [Zurich](location)?
+      - What are the coordinates of [Warsaw](location)?
+      - Tell me the precise location of [Amsterdam](location).
+      - Where is [Brussels](location) situated on the globe?
+      - What's the exact geographical position of [Lisbon](location)?
+      - Do you know where [Athens](location) is located?
+      - Please tell me the location of [Stockholm](location).
+      - What is the address of [Helsinki](location)?
+      - Tell me the location of [Oslo](location).
+      - Where can I locate [Copenhagen](location)?
+      - Please tell me the exact location of [Dublin](location).
+      - What is the address of [London](location)?
+      - Tell me the location of [Edinburgh](location).
+      - Where is
+
+
+
+  - intent: music_request
+    examples: |
+      - Play [${song}](song) by [${artist}](artist)
+      - I want to hear [${song}](song) by [${artist}](artist)
+      - Can you play [${song}](song) from [${artist}](artist)?
+      - How about [${song}](song) by [${artist}](artist)?
+      - Please play [${song}](song) from [${artist}](artist)
+      - I'm in the mood for [${song}](song) by [${artist}](artist)
+      - Could you put on [${song}](song) by [${artist}](artist)?
+      - Let's listen to [${song}](song) by [${artist}](artist)
+      - Play a track by [${artist}](artist) - [${song}](song)
+      - Could you start with [${song}](song) by [${artist}](artist)?
+      - Let's kick things off with [${song}](song) from [${artist}](artist)
+      - Begin the playlist with [${song}](song) by [${artist}](artist)
+      - Please play a song from [${artist}](artist) - [${song}](song)
+      - How about some [${song}](song) from [${artist}](artist)?
+      - Start the music with [${song}](song) by [${artist}](artist)
+      - I'd like to listen to [${song}](song) by [${artist}](artist)
+      - Begin the song selection with [${song}](song) by [${artist}](artist)
+      - Play [${song}](song) by [${artist}](artist) for me
+      - Can you put on [${song}](song) by [${artist}](artist)?
+      - How about we start with [${song}](song) from [${artist}](artist)?
+      - Begin the playlist with [${song}](song) by [${artist}](artist), please.
+      - Play a song by [${artist}](artist), starting with [${song}](song).
+      - Could you kick things off with [${song}](song) by [${artist}](artist)?
+      - I'd love to hear [${song}](song) by [${artist}](artist), please.
+      - Start the music with [${song}](song) by [${artist}](artist), if you can.
+      - Please begin with [${song}](song) from [${artist}](artist).
+      - Put on some music from [${artist}](artist), starting with [${song}](song).
+      - How about starting with [${song}](song) by [${artist}](artist)?
+      - Play a track by [${artist}](artist), and let's begin with [${song}](song).
+      - Play a [${song}](song) from [${artist}](artist), please.
+      - Can you start with [${song}](song) by [${artist}](artist)?
+      - How about [${song}](song) by [${artist}](artist) to start?
+      - Begin with [${song}](song) from [${artist}](artist), please.
+      - Play [${song}](song) by [${artist}](artist) as the first song.
+      - I'd like to begin with [${song}](song) by [${artist}](artist).
+      - Can we kick things off with [${song}](song) from [${artist}](artist)?
+      - Start with a song by [${artist}](artist), like [${song}](song).
+      - Play something from [${artist}](artist), starting with [${song}](song).
+      - Could you please start with [${song}](song) by [${artist}](artist)?
+      - I'm starting with [${song}](song) from [${artist}](artist).
+      - Let's begin with [${song}](song) by [${artist}](artist), shall we?
+      - Play a song by [${artist}](artist), and [${song}](song) will be great.
+      - Begin with [${song}](song) from [${artist}](artist) for me.
+      - How about we start the music with [${song}](song) by [${artist}](artist)?
+      - Play a track by [${artist}](artist), and we'll kick off with [${song}](song).
+      - Begin the playlist with [${song}](song) from [${artist}](artist), please.
+      - Play [${song}](song) by [${artist}](artist) as the first track.
+      - Could you put on [${song}](song) by [${artist}](artist) to start?
+      - I'd love to hear [${song}](song) by [${artist}](artist) first.
+      - Let's begin with [${song}](song) by [${artist}](artist), if you don't mind.
+      - Play [${song}](song) from [${artist}](artist) to kick things off.
+      - How about we start the music with [${song}](song) by [${artist}](artist)?
+      - Start with [${song}](song) by [${artist}](artist), please.
+      - I'd like to begin the playlist with [${song}](song) from [${artist}](artist).
+      - Can you put on [${song}](song) by [${artist}](artist) as the first song?
+      - Play a song from [${artist}](artist), and [${song}](song) is a great choice.
+      - Begin with [${song}](song) by [${artist}](artist) as the opening track.
+      - How about we start with [${song}](song) by [${artist}](artist) this time?
+      - Play [${song}](song) by [${artist}](artist) to begin the music.
+      - Could you please start with [${song}](song) by [${artist}](artist)?
+      - Let's kick things off with [${song}](song) from [${artist
+      - Play [${song}](song) by [${artist}](artist) for me
+      - Can you put on [${song}](song) by [${artist}](artist)?
+      - How about we start with [${song}](song) from [${artist}](artist)?
+      - Begin the playlist with [${song}](song) by [${artist}](artist), please.
+      - Play a song by [${artist}](artist), starting with [${song}](song).
+      - Could you please start with [${song}](song) by [${artist}](artist)?
+      - I'm starting with [${song}](song) from [${artist}](artist).
+      - Let's begin with [${song}](song) by [${artist}](artist), shall we?
+      - Play a song by [${artist}](artist), and [${song}](song) will be great.
+      - Begin with [${song}](song) from [${artist}](artist) for me.
+      - How about we start the music with [${song}](song) by [${artist}](artist)?
+      - Play a track by [${artist}](artist), and we'll kick off with [${song}](song).
+      - Begin the playlist with [${song}](song) from [${artist}](artist), please.
+      - Play [${song}](song) by [${artist}](artist) as the first track.
+      - Could you put on [${song}](song) by [${artist}](artist) to start?
+      - I'd love to hear [${song}](song) by [${artist}](artist) first.
+      - Let's begin with [${song}](song) by [${artist}](artist), if you don't mind.
+      - Play [${song}](song) from [${artist}](artist) to kick things off.
+      - How about we start the music with [${song}](song) by [${artist}](artist)?
+      - Start with [${song}](song) by [${artist}](artist), please.
+      - I'd like to begin the playlist with [${song}](song) from [${artist}](artist).
+      - Can you put on [${song}](song) by [${artist}](artist) as the first song?
+      - Play a song from [${artist}](artist), and [${song}](song) is a great choice.
+      - Begin with [${song}](song) by [${artist}](artist) as the opening track.
+      - How about we start with [${song}](song) by [${artist}](artist) this time?
+      - Play [${song}](song) by [${artist}](artist) to begin the music.
+      - Could you please start with [${song}](song) by [${artist}](artist)?
+      - Let's kick things off with [${song}](song) from [${artist}](artist).
+      - Start with a song by [${artist}](artist), like [${song}](song).
+      - Play something from [${artist}](artist), starting with [${song}](song).
+      - Please start with [${song}](song) by [${artist}](artist).
+      - Put on [${song}](song) by [${artist}](artist) to start, please.
+      - How about [${song}](song) by [${artist}](artist) to start the music?
+      - Begin the playlist with [${song}](song) by [${artist}](artist), if you can.
+      - Please begin with [${song}](song) from [${artist}](artist).
+      - Put on some music from [${artist}](artist), starting with [${song}](song).
+      - How about starting with [${song}](song) by [${artist}](artist)?
+      - Play a track by [${artist}](artist), and let's begin with [${song}](song).
+      - Begin the playlist with [${song}](song) from [${artist}](artist), please.
+      - Play [${song}](song) by [${artist}](artist) as the first song.
+      - Could you start the music with [${song}](song) by [${artist}](artist)?
+      - I'd love to kick things off with [${song}](song) by [${artist}](artist).
+      - Let's start the playlist with [${song}](song) from [${artist}](artist).
+      - Play [${song}](song) by [${artist}](artist) to set the mood.
+      - Begin with [${song}](song) by [${artist}](artist) for a great start.
+      - How about we begin with [${song}](song) by [${artist}](artist)?
+      - Start the music with [${song}](song) by [${artist}](artist), please.
+      - I'd like to begin the playlist with [${song}](song) by [${artist}](artist).
+      - Can you start with [${song}](song) by [${artist}](artist) this time?
+      - Play a track by [${artist}](artist), and let's start with [${song}](song).
+      - Begin the playlist with [${song}](song) by [${artist}](artist) to get us going.
+      - Please initiate the music with [${song}](song) by [${artist}](artist).
+      - Put on [${song}](song) by [${artist}](artist) at the beginning, if you can.
+      - How about we open with [${song}](song) by [${artist}](artist)?
+      - Play [${song}](song) by [${artist}](artist) to begin the session.
+      - Could you start with [${song}](song) by [${artist}](artist) for me?
+      - I'd like to start the music with [${song}](song) from [${artist}](artist).
+      - Begin with [${song}](song) by [${artist}](artist) to set the tone.
+      - Play [${song}](song) by [${artist}](artist) as our starting point.
+      - How about we start with [${song}](song) from [${artist}](artist) today?
+      - Play "[Bohemian Rhapsody](song)" by "[Queen](artist)"
+      - Play "[Imagine](song)" by "[John Lennon](artist)"
+      - Play "[Hotel California](song)" by "[Eagles](artist)"
+      - Play "[Stairway to Heaven](song)" by "[Led Zeppelin](artist)"
+      - Play "[Like a Rolling Stone](song)" by "[Bob Dylan](artist)"
+      - Play "[Purple Haze](song)" by "[Jimi Hendrix](artist)"
+      - Play "[Billie Jean](song)" by "[Michael Jackson](artist)"
+      - Play "[Smells Like Teen Spirit](song)" by "[Nirvana](artist)"
+      - Play "[Let It Be](song)" by "[The Beatles](artist)"
+      - Play "[Thriller](song)" by "[Michael Jackson](artist)"
+      - Play "[Sweet Child o' Mine](song)" by "[Guns N' Roses](artist)"
+      - Play "[Wish You Were Here](song)" by "[Pink Floyd](artist)"
+      - Play "[My Generation](song)" by "[The Who](artist)"
+      - Play "[Bohemian Rhapsody](song)" by "[Queen](artist)"
+      - Play "[Hotel California](song)" by "[Eagles](artist)"
+      - Play "[Imagine](song)" by "[John Lennon](artist)"
+      - Play "[Like a Rolling Stone](song)" by "[Bob Dylan](artist)"
+      - Play "[Purple Haze](song)" by "[Jimi Hendrix](artist)"
+      - Play "[Smells Like Teen Spirit](song)" by "[Nirvana](artist)"
+      - Play "[Wonderwall](song)" by "[Oasis](artist)"
+      - Play "[My Generation](song)" by "[The Who](artist)"
+      - Play "[Bohemian Rhapsody](song)" by "[Queen](artist)"
+      - Play "[Hotel California](song)" by "[Eagles](artist)"
+      - Play "[Imagine](song)" by "[John Lennon](artist)"
+      - Play "[Like a Rolling Stone](song)" by "[Bob Dylan](artist)"
+      - Play "[Purple Haze](song)" by "[Jimi Hendrix](artist)"
+      - Play "[Smells Like Teen Spirit](song)" by "[Nirvana](artist)"
+      - Play "[Wonderwall](song)" by "[Oasis](artist)"
+      - Play "[My Generation](song)" by "[The Who](artist)"
+      - Play "[Bohemian Rhapsody](song)" by "[Queen](artist)"
+      - Play "[Hotel California](song)" by "[Eagles](artist)"
+      - Play "[Imagine](song)" by "[John Lennon](artist)"
+      - Play "[Like a Rolling Stone](song)" by "[Bob Dylan](artist)"
+      - Play "[Purple Haze](song)" by "[Jimi Hendrix](artist)"
+      - Play "[Smells Like Teen Spirit](song)" by "[Nirvana](artist)"
+      - Play "[Wonderwall](song)" by "[Oasis](artist)"
+      - Play "[My Generation](song)" by "[The Who](artist)"
+      - Play "[Bohemian Rhapsody](song)" by "[Queen](artist)"
+      - Play "[Hotel California](song)" by "[Eagles](artist)"
+      - Play "[Imagine](song)" by "[John Lennon](artist)"
+      - Play "[Like a Rolling Stone](song)" by "[Bob Dylan](artist)"
+      - Play "[Purple Haze](song)" by "[Jimi Hendrix](artist)"
+      - Play "[Smells Like Teen Spirit](song)" by "[Nirvana](artist)"
+      - Play "[Wonderwall](song)" by "[Oasis](artist)"
+      - Play "[Under the Bridge](song)" by "[Red Hot Chili Peppers](artist)"
+      - Play "[Californication](song)" by "[Red Hot Chili Peppers](artist)"
+      - Play "[By the Way](song)" by "[Red Hot Chili Peppers](artist)"
+      - Play "[Give It Away](song)" by "[Red Hot Chili Peppers](artist)"
+      - Play "[Scar Tissue](song)" by "[Red Hot Chili Peppers](artist)"
+      - Play "[Dani California](song)" by "[Red Hot Chili Peppers](artist)"
+      - Play "[Otherside](song)" by "[Red Hot Chili Peppers](artist)"
+      - Play "[Can't Stop](song)" by "[Red Hot Chili Peppers](artist)"
+      - Play "[Under the Bridge](song)" by "[Red Hot Chili Peppers](artist)"
+      - Play "[Californication](song)" by "[Red Hot Chili Peppers](artist)"
+      - Play "[By the Way](song)" by "[Red Hot Chili Peppers](artist)"
+      - Play "[Give It Away](song)" by "[Red Hot Chili Peppers](artist)"
+      - Play "[Scar Tissue](song)" by "[Red Hot Chili Peppers](artist)"
+      - Play "[Dani California](song)" by "[Red Hot Chili Peppers](artist)"
+      - Play "[Otherside](song)" by "[Red Hot Chili Peppers](artist)"
+      - Play "[Can't Stop](song)" by "[Red Hot Chili Peppers](artist)"
+      - Play "[Under the Bridge](song)" by "[Red Hot Chili Peppers](artist)"
+      - Play "[Californication](song)" by "[Red Hot Chili Peppers](artist)"
+      - Play "[By the Way](song)" by "[Red Hot Chili Peppers](artist)"
+      - Play "[Give It Away](song)" by "[Red Hot Chili Peppers](artist)"
+      - Play "[Scar Tissue](song)" by "[Red Hot Chili Peppers](artist)"
+      - Play "[Dani California](song)" by "[Red Hot Chili Peppers](artist)"
+      - Play "[Otherside](song)" by "[Red Hot Chili Peppers](artist)"
+      - Play "[Can't Stop](song)" by "[Red Hot Chili Peppers](artist)"
+      - Play "[Under the Bridge](song)" by "[Red Hot Chili Peppers](artist)"
+      - Play "[Californication](song)" by "[Red Hot Chili Peppers](artist)"
+        - Play "[By the Way](song)" by "[Red Hot Chili Peppers](artist)"
+      - Play "[Give It Away](song)" by "[Red Hot Chili Peppers](artist)"
+      - Play "[Scar Tissue](song)" by "[Red Hot Chili Peppers](artist)"
+      - Play "[Dani California](song)" by "[Red Hot Chili Peppers](artist)"
+      - Play "[Otherside](song)" by "[Red Hot Chili Peppers](artist)"
+      - Play "[Can't Stop](song)" by "[Red Hot Chili Peppers](artist)"
+      - Play "[Under the Bridge](song)" by "[Red Hot Chili Peppers](artist)
+      - Play "[Reptilia](song)" by "[The Strokes](artist)"
+      - Play "[Hey Jude](song)" by "[The Beatles](artist)"
+      - Play "[Secret Door](song)" by "[Arctic Monkeys](artist)"
+
+
+  - lookup: song
+    examples: |
+      - Stan
+      - D4L
+      - Sicko Mode
+      - Imagine
+      - Hotel California
+      - Bohemian Rhapsody
+      - Shape of You
+      - Despacito
+      - Bad Guy
+      - Thriller
+      - Blackbird
+      - Billie Jean
+      - Sweet Child o' Mine
+      - All Star
+      - My Heart Will Go On
+      - Smells Like Teen Spirit
+      - Stairway to Heaven
+      - Hey Jude
+      - Hallelujah
+      - Superstition
+      - Rolling in the Deep
+      - Radioactive
+      - Take Me to Church
+      - Don't Stop Believin'
+      - Wonderwall
+      - Let It Be
+      - Lean on Me
+      - Thinking Out Loud
+      - Uptown Funk
+      - Livin' on a Prayer
+      - Sweet Home Alabama
+      - Stand by Me
+      - Radio Ga Ga
+      - Hello
+      - Purple Haze
+      - Smooth Criminal
+      - Yesterday
+      - Wrecking Ball
+      - What's Going On
+      - Crazy in Love
+      - Eye of the Tiger
+      - I Want to Hold Your Hand
+      - La Bamba
+      - I Will Always Love You
+      - Viva la Vida
+      - Counting Stars
+      - Lose Yourself
+      - Wake Me Up
+      - Hotline Bling
+      - Love Me Tender
+      - I Can't Help Falling in Love
+      - Gangsta's Paradise
+      - Jump
+      - Somebody to Love
+      - Black and Yellow
+      - No Scrubs
+      - Killing Me Softly
+      - Let's Get It On
+      - Under Pressure
+      - Purple Rain
+      - Sweet Child o' Mine
+      - Don't Stop Believin'
+      - I Don't Want to Miss a Thing
+      - With or Without You
+      - Livin' on a Prayer
+      - 0 to 100/ The Catch Up 
+      - 10 Bands
+      - 305 to My City
+      - 5AM In Toronto
+      - 6 God
+      - 6 Man
+      - 6PM in New York
+      - 7AM On Bridle Path
+      - 8 out of 10
+      - 9
+      - All Me
+      - Back to Back
+      - BackOutsideBoyz
+      - Behind Barz
+      - Best I Ever Had
+      - Blem
+      - Blue Tint
+      - Buried Alive Interlude
+      - Cameras/Good Ones Go
+      - Can I
+      - Can't Take a Joke
+      - Cece's Interlude
+      - Champagne Poetry
+      - Charged Up
+      - Chicago Freestyle
+      - Child's Play
+      - Club Paradise
+      - Connect
+      - Controlla
+      - Crew Love
+      - D4L Freestyle
+      - Days in the East
+      - Deep Pockets
+      - Demons
+      - Diplomatic Immunity
+      - Do Not Disturb
+      - Doing It Wrong
+      - Don't Matter to Me
+      - Draft Day
+      - Dreams Money Can Buy
+      - Duppy Freestyle
+      - Elevate
+      - Emotionless
+      - Energy
+      - Fair Trade
+      - Faithful
+      - Fake Love
+      - Falling Back
+      - Fancy
+      - Fear
+      - Feel No Ways
+      - Final Fantasy
+      - Find Your Love
+      - Finesse
+      - Fire & Desire
+      - Fireworks
+      - Forever
+      - Fountains
+      - Free Smoke
+      - Free Spirit
+      - From Florida with Love
+      - From Time
+      - Furthest Thing
+      - Get It Together
+      - Girls Love Beyoncé
+      - Girls Want Girls
+      - God's Plan
+      - Grammys
+      - Gyalchester
+      - Headlines
+      - Heat of the Moment
+      - Hold On We're Going Home
+      - Hotline Bling
+      - Houstatlantavegas
+      - How About Now
+      - HYFR
+      - Hype
+      - I Get Lonely
+      - I'm Upset
+      - In My Feelings
+      - In The Bible
+      - Is There More
+      - Jaded
+      - Jimmy Cooks
+      - Jodeci Freestyle
+      - Jorja Interlude
+      - Karaoke
+      - Keep the Family Close
+      - KMT
+      - Knife Talk
+      - Know Yourself
+      - Laugh Now Cry Later
+      - Lemon Pepper Freestyle
+      - Light Up
+      - Look What You've Done
+      - Lord Knows
+      - Losses
+      - Love All
+      - Madonna
+      - Make Me Proud
+      - March 14
+      - Marvin's Room
+      - Massive
+      - Middle Of The Ocean
+      - Miss Me
+      - Mob Ties
+      - Money in the Grave
+      - N 2 Deep
+      - Nice For What
+      - No Friends In The Industry
+      - No Long Talk
+      - Nonstop
+      - Not You Too
+      - November 18th
+      - Omertá
+      - On The Radar Freestyle
+      - One Dance
+      - Over
+      - Over My Dead Body
+      - Pain 1993
+      - Papi's Home
+      - Paris Morton Music
+      - Passionfruit
+      - Peak
+      - Pipe Down
+      - Pop Style
+      - Portland
+      - Pound Cake/Paris Morton Music 2
+      - Practice
+      - Race My Mind
+      - Redemption
+      - Right Hand
+      - Sacrifices
+      - Sandra's Rose
+      - Search & Rescue
+      - Shot For Me
+      - Show Me a Good Time
+      - Shut It Down
+      - Signs
+      - Sneakin
+      - Star67
+      - Started From The Bottom
+      - Sticky
+      - Still Here
+      - Successful
+      - Summer Games
+      - Summer Sixteen
+      - Summers Over Interlude
+      - Survival
+      - Take Care
+      - Talk Up
+      - Teenage Fever
+      - Texts Go Green
+      - Thank Me Now
+      - That's How You Feel
+      - The Language
+      - The Motion
+      - The Motto
+      - The Real Her
+      - The Ride
+      - Time Flies
+      - Too Good
+      - Too Much
+      - Toosie Slide
+      - Trophies
+      - TSU
+      - Tuscan Leather
+      - Two Birds, One Stone
+      - U with Me?
+      - Under Ground Kings
+      - Unforgettable
+      - Uptown
+      - Used To
+      - Views
+      - Wants And Needs
+      - War
+      - Way 2 Sexy
+      - We Made It
+      - We'll Be Fine
+      - All The Stars 
+      - Alright
+      - Auntie Diaries
+      - Backseat Freestyle
+      - Big Shot
+      - Bitch, Don't Kill My Vibe
+      - Black Panther
+      - BLOOD.
+      - Complexion (A Zulu Love)
+      - Compton
+      - Count Me Out
+      - Die Hard
+      - DNA.
+      - DUCKWORTH.
+      - ELEMENT.
+      - Father Time
+      - FEAR.
+      - FEEL.
+      - For Free? (Interlude)
+      - For Sale? (Interlude)
+      - GOD.
+      - Good Kid
+      - Hood Politics
+      - How Much A Dollar Cost
+      - HUMBLE.
+      - I
+      - Institutionalized
+      - Keisha's Song (Her Pain)
+      - King Kunta
+      - LOVE.
+      - LOYALTY.
+      - LUST.
+      - m.A.A.d city
+      - Money Trees
+      - Mortal Man
+      - Mother I Sober
+      - N95
+      - Poetic Justice
+      - Pray For Me
+      - PRIDE.
+      - Real
+      - Rich Spirit
+      - Savior
+      - Sherane a.k.a Master Splinter's Daughter
+      - Silent Hill
+      - Sing About Me, I'm Dying of Thirst
+      - Swimming Pools (Drank)
+      - The Art of Peer Pressure
+      - The Blacker the Berry
+      - The Heart Part 4
+      - The Heart Part 5
+      - The Heart Pt. 2
+      - The Recipe
+      - These Walls
+      - U
+      - United In Grief
+      - untitled 01 | 08.19.2014
+      - untitled 02 | 06.23.2014
+      - untitled 03 | 05.28.2013
+      - untitled 04 | 08.14.2014
+      - untitled 05 l 09.21.2014
+      - untitled 06 | 06.30.2014
+      - untitled 07 | 2014-2016
+      - untitled 08 | 09.06.2014.
+      - We Cry Together
+      - Wesley's Theory
+      - Worldwide Steppers
+      - XXX.
+      - YAH.
+      - Aeroplane 
+      - American Ghost Dance
+      - Animal Bar
+      - Around The World
+      - Behind The Sun
+      - Black Summer
+      - Blood Sugar Sex Magik
+      - Breaking the Girl
+      - Brendan's Death Song
+      - By The Way
+      - C'mon Girl
+      - Cabron
+      - Californication
+      - Can't Stop
+      - Charlie
+      - Coffee Shop
+      - Dani California
+      - Dark Necessities
+      - Death Of A Martian
+      - Desecration Smile
+      - Detroit
+      - Did I Let You Know
+      - Don't Forget Me
+      - Dosed
+      - Dreams Of A Samurai
+      - Eddie
+      - Emit Remmus
+      - Encore
+      - Especially In Michigan
+      - Ethiopia
+      - Even You Brutus?
+      - Factory of Faith
+      - Feasting On The Flowers
+      - Fight Like A Brave
+      - Fortune Faded
+      - Funky Crime
+      - Funny Face
+      - Get On Top
+      - Get Up And Jump
+      - Give It Away
+      - Go Robot
+      - Good Time Boys
+      - Goodbye Angels
+      - Grand Pappy Du Plenty
+      - Green Heaven
+      - Happiness Loves Company
+      - Hard To Concentrate
+      - Hey
+      - Higher Ground
+      - Hump De Bump
+      - I Could Die For You
+      - I Could Have Lied
+      - If You Have To Ask
+      - Johnny, Kick A Hole In The Sky
+      - Knock Me Down
+      - Long Progression
+      - Look Around
+      - Magic Johnson
+      - Make You Feel Better
+      - Mellowship Slinky In B Major
+      - Monarchy of Roses
+      - My Lovely Man
+      - No Chump Love Sucker
+      - Not The One
+      - One Big Mob
+      - One Hot Minute
+      - One Note Symphony
+      - Organic Anti-Beat Box Band
+      - Otherside
+      - Out In L.A.
+      - Party On Your Pussy
+      - Pea
+      - Porcelain
+      - Poster Child
+      - Punk Rock Classic
+      - Purple Stain
+      - Road Trippin'
+      - Save the Population
+      - Savior
+      - Scar Tissue
+      - Shallow Be Thy Game
+      - She Looks To Me
+      - She's Only 18
+      - Sick Love
+      - Sir Psycho Sexy
+      - Skinny Sweaty Man
+      - Slow Cheetah
+      - Snow (Hey Oh)
+      - So Much I
+      - Soul to Squeeze
+      - Stadium Arcadium
+      - Storm In A Teacup
+      - Suck My Kiss
+      - Taste The Pain
+      - Tearjerker
+      - Tell Me Baby
+      - The Adventures of Rain Dance Maggie
+      - The Getaway
+      - The Greeting Song
+      - The Hunter
+      - The Longest Wave
+      - The Power Of Equality
+      - The Righteous & The Wicked
+      - The Zephyr Song
+      - These Are The Ways
+      - This Is The Place
+      - This Ticonderoga
+      - This Velvet Glove
+      - Tippa My Tongue
+      - Transcending
+      - True Men Don't Kill Coyotes
+      - Turn It Again
+      - Under The Bridge
+      - Universally Speaking
+      - Venice Queen
+      - Warlocks
+      - Warped
+      - We Believe
+      - We Turn Red
+      - Wet Sand
+      - Yertle The Turtle
+      - I Will Survive
+      - Dancing Queen
+      - I Wanna Dance with Somebody
+      - Sweet Caroline
+      - Piano Man
+      - Tiny Dancer
+      - Wannabe
+      - Rock Lobster
+      - Born to Be Wild
+      - Proud Mary
+      - I'm Yours
+      - Take Me Home, Country Roads
+      - Hotel California
+      - Smells Like Teen Spirit
+      - All Along the Watchtower
+      - Whole Lotta Love
+      - Purple Haze
+      - Bohemian Rhapsody
+      - Imagine
+      - Hey Jude
+      - Stairway to Heaven
+      - Hallelujah
+      - Superstition
+      - Rolling in the Deep
+      - Radioactive
+      - Take Me to Church
+      - Don't Stop Believin'
+      - Wonderwall
+      - Let It Be
+      - Lean on Me
+      - Thinking Out Loud
+      - Uptown Funk
+      - Livin' on a Prayer
+      - Sweet Home Alabama
+      - Stand by Me
+      - Radio Ga Ga
+      - Hello
+      - Smooth Criminal
+      - Yesterday
+      - Wrecking Ball
+      - What's Going On
+      - Crazy in Love
+      - Eye of the Tiger
+      - I Want to Hold Your Hand
+      - La Bamba
+      - I Will Always Love You
+      - Viva la Vida
+      - Counting Stars
+      - Lose Yourself
+      - Wake Me Up
+      - Hotline Bling
+      - Love Me Tender
+      - I Can't Help Falling in Love
+      - Gangsta's Paradise
+      - Jump
+      - Somebody to Love
+      - Black and Yellow
+      - No Scrubs
+      - Killing Me Softly
+      - Let's Get It On
+      - Under Pressure
+      - Purple Rain
+      - Sweet Child o' Mine
+      - Don't Stop Believin'
+      - I Don't Want to Miss a Thing
+      - With or Without You
+      - Livin' on a Prayer
+      - I Will Survive
+      - Dancing Queen
+      - I Wanna Dance with Somebody
+      - Sweet Caroline
+      - Piano Man
+      - Tiny Dancer
+      - Wannabe
+      - Rock Lobster
+      - Born to Be Wild
+      - Proud Mary
+      - I'm Yours
+      - Take Me Home, Country Roads
+      - Hotel California
+      - Smells Like Teen Spirit
+      - All Along the Watchtower
+      - Whole Lotta Love
+      - Purple Haze
+      - Bohemian Rhapsody
+      - Imagine
+      - Hey Jude
+      - Stairway to Heaven
+      - Hallelujah
+      - Superstition
+      - Rolling in the Deep
+      - Radioactive
+      - Take Me to Church
+      - Don't Stop Believin'
+      - Wonderwall
+      - Let It Be
+      - Lean on Me
+      - Thinking Out Loud
+      - Uptown Funk
+      - Livin' on a Prayer
+      - Sweet Home Alabama
+      - Stand by Me
+      - Radio Ga Ga
+      - Hello
+      - Smooth Criminal
+      - Yesterday
+      - Wrecking Ball
+      - What's Going On
+      - Crazy in Love
+      - Eye of the Tiger
+      - I Want to Hold Your Hand
+      - La Bamba
+      - I Will Always Love You
+      - Viva la Vida
+      - Counting Stars
+      - Lose Yourself
+      - Wake Me Up
+      - Hotline Bling
+      - Love Me Tender
+      - I Can't Help Falling in Love
+      - Gangsta's Paradise
+      - Jump
+      - Somebody to Love
+      - Black and Yellow
+      - No Scrubs
+      - Killing Me Softly
+      - Let's Get It On
+      - Under Pressure
+      - Purple Rain
+      - Sweet Child o' Mine
+      - Don't Stop Believin'
+      - I Don't Want to Miss a Thing
+      - With or Without You
+      - Livin' on a Prayer
+      - I Will Survive
+      - Dancing Queen
+      - I Wanna Dance with Somebody
+      - Sweet Caroline
+      - Piano Man
+      - Tiny Dancer
+      - Wannabe
+      - Rock Lobster
+      - Born to Be Wild
+      - Proud Mary
+      - I'm Yours
+      - Take Me Home, Country Roads
+      - Highway to Hell
+      - Bad Guy
+      - Shape of You
+      - Lose Yourself
+      - Uptown Funk
+      - Despacito
+      - Love Yourself
+      - Can't Stop the Feeling!
+      - Closer
+      - Hotline Bling
+      - Sorry
+      - Shape of You
+      - Believer
+      - Thunder
+      - Despacito
+      - Perfect
+      - Havana
+      - New Rules
+      - Gucci Gang
+      - Psycho
+      - Rockstar
+
+  - lookup: artist
+    examples: |
+      - Kendrick Lamar
+      - Tyler the Creator
+      - Drake
+      - Gustavo Cerati
+      - Beyoncé
+      - The Weeknd
+      - Taylor Swift
+      - Ariana Grande
+      - Ed Sheeran
+      - Lady Gaga
+      - Justin Bieber
+      - Rihanna
+      - Kanye West
+      - Billie Eilish
+      - Coldplay
+      - Adele
+      - Eminem
+      - Maroon 5
+      - Katy Perry
+      - Bruno Mars
+      - Post Malone
+      - Shawn Mendes
+      - Lana Del Rey
+      - Sia
+      - Adele
+      - Halsey
+      - Khalid
+      - Sam Smith
+      - Demi Lovato
+      - Selena Gomez
+      - Taylor Swift
+      - Camila Cabello
+      - Shawn Mendes
+      - Zayn Malik
+      - Harry Styles
+      - BTS
+      - Blackpink
+      - EXO
+      - Red Velvet
+      - Twice
+      - The Beatles
+      - Queen
+      - Led Zeppelin
+      - Pink Floyd
+      - Nirvana
+      - Radiohead
+      - U2
+      - Pearl Jam
+      - Foo Fighters
+      - Oasis
+      - Arctic Monkeys
+      - The Rolling Stones
+      - David Bowie
+      - Prince
+      - Madonna
+      - Michael Jackson
+      - Whitney Houston
+      - Bob Marley
+      - Bob Dylan
+      - Johnny Cash
+      - Elvis Presley
+      - Frank Sinatra
+      - Louis Armstrong
+      - Miles Davis
+      - John Coltrane
+      - Billie Holiday
+      - Ella Fitzgerald
+      - Aretha Franklin
+      - Ray Charles
+      - Jimi Hendrix
+      - The Who
+      - The Doors
+      - Pink Floyd
+      - Queen
+      - Led Zeppelin
+      - The Rolling Stones
+      - Bob Marley
+      - Bob Dylan
+      - Johnny Cash
+      - Elvis Presley
+      - Frank Sinatra
+      - Louis Armstrong
+      - Miles Davis
+      - John Coltrane
+      - Billie Holiday
+      - Ella Fitzgerald
+      - Aretha Franklin
+      - Ray Charles
+      - Jimi Hendrix
+      - The Who
+      - The Doors
+      - The Clash
+      - The Ramones
+      - Nirvana
+      - Radiohead
+      - U2
+      - Pearl Jam
+      - Foo Fighters
+      - Oasis
+      - Arctic Monkeys
+      - David Bowie
+      - Prince
+      - Madonna
+      - Michael Jackson
+      - Whitney Houston
+      - Bob Marley
+      - Bob Dylan
+      - Johnny Cash
+      - Elvis Presley
+      - Frank Sinatra
+      - Louis Armstrong
+      - Miles Davis
+      - John Coltrane
+      - Billie Holiday
+      - Ella Fitzgerald
+      - Aretha Franklin
+      - Ray Charles
+      - Jimi Hendrix
+      - The Who
+      - The Doors
+      - The Clash
+      - The Ramones
+      - AC/DC
+      - Metallica
+      - Guns N' Roses
+      - Aerosmith
+      - Queen
+      - Led Zeppelin
+      - The Rolling Stones
+      - Bob Marley
+      - Bob Dylan
+      - Johnny Cash
+      - Elvis Presley
+      - Frank Sinatra
+      - Louis Armstrong
+      - Miles Davis
+      - John Coltrane
+      - Billie Holiday
+      - Ella Fitzgerald
+      - Aretha Franklin
+      - Ray Charles
+      - Jimi Hendrix
+      - The Who
+      - The Doors
+      - The Clash
+      - The Ramones
+      - AC/DC
+      - Metallica
+      - Guns N' Roses
+      - Aerosmith
+      - Pink Floyd
+      - Nirvana
+      - Radiohead
+      - U2
+      - Pearl Jam
+      - Foo Fighters
+      - Oasis
+      - Arctic Monkeys
+      - David Bowie
+      - Prince
+      - Madonna
+      - Michael Jackson
+      - Whitney Houston
+      - Bob Marley
+      - Bob Dylan
+      - Johnny Cash
+      - Elvis Presley
+      - Frank Sinatra
+      - Louis Armstrong
+      - Miles Davis
+      - John Coltrane
+      - Billie Holiday
+      - Ella Fitzgerald
+      - Aretha Franklin
+      - Ray Charles
+      - Jimi Hendrix
+      - The Who
+      - The Doors
+      - The Clash
+      - The Ramones
+      - AC/DC
+      - Metallica
+      - Guns N' Roses
+      - Aerosmith
+      - Pink Floyd
+      - Nirvana
+      - Radiohead
+      - U2
+      - Pearl Jam
+      - Foo Fighters
+      - Oasis
+      - Arctic Monkeys
+      - David Bowie
+      - Prince
+      - Madonna
+      - Michael Jackson
+      - Whitney Houston
+      - Bob Marley
+      - Bob Dylan
+      - Johnny Cash
+      - Elvis Presley
+      - Frank Sinatra
+      - Louis Armstrong
+      - Miles Davis
+      - John Coltrane
+      - Billie Holiday
+      - Ella Fitzgerald
+      - Aretha Franklin
+      - Ray Charles
+      - Jimi Hendrix
+      - The Who
+      - The Doors
+      - The Clash
+      - The Ramones
+      - AC/DC
+      - Metallica
+      - Guns N' Roses
+      - Aerosmith
+      - Pink Floyd
+      - Nirvana
+      - Radiohead
+      - U2
+      - Pearl Jam
+      - Foo Fighters
+      - Oasis
+      - Arctic Monkeys
+      - David Bowie
+      - Prince
+      - Madonna
+      - Michael Jackson
+      - Whitney Houston
+      - Bob Marley
+      - Bob Dylan
+      - Johnny Cash
+      - Elvis Presley
+      - Frank Sinatra
+      - Louis Armstrong
+      - Miles Davis
+      - John Coltrane
+      - Billie Holiday
+      - Ella Fitzgerald
+      - Aretha Franklin
+      - Ray Charles
+      - Jimi Hendrix
+      - The Who
+      - The Doors
+      - The Clash
+      - The Ramones
+      - AC/DC
+      - Metallica
+      - Guns N' Roses
+      - Aerosmith
+      - Pink Floyd
+      - Nirvana
+      - Radiohead
+      - U2
+      - Pearl Jam
+      - Foo Fighters
+      - Oasis
+      - Arctic Monkeys
+      - David Bowie
+      - Prince
+      - Madonna
+      - Michael Jackson
+      - Whitney Houston
+      - Bob Marley
+      - Bob Dylan
+      - Johnny Cash
+      - Elvis Presley
+      - Frank Sinatra
+      - Louis Armstrong
+      - Miles Davis
+      - John Coltrane
+      - Billie Holiday
+      - Ella Fitzgerald
+      - Aretha Franklin
+      - Ray Charles
+      - Jimi Hendrix
+      - The Who
+      - The Doors
+      - The Clash
+      - The Ramones
+      - AC/DC
+      - Metallica
+      - Guns N' Roses
+      - Aerosmith
+      - Pink Floyd
+      - Nirvana
+      - Radiohead
+      - U2
+      - Pearl Jam
+      - Foo Fighters
+      - Oasis
+      - Arctic Monkeys
+      - David Bowie
+      - Prince
+      - Madonna
+      - Michael Jackson
+      - Whitney Houston
+      - Bob Marley
+      - Bob Dylan
+      - Johnny Cash
+      - Elvis Presley
+      - Frank Sinatra
+      - Louis Armstrong
+      - Miles Davis
+      - John Coltrane
+      - Billie Holiday
+      - Ella Fitzgerald
+      - Aretha Franklin
+      - Ray Charles
+      - Jimi Hendrix
+      - The Who
+      - The Doors
+      - The Clash
+      - The Ramones
+      - AC/DC
+      - Metallica
+      - Guns N' Roses
+      - Aerosmith
+      - Pink Floyd
+      - Nirvana
+      - Radiohead
+      - U2
+      - Pearl Jam
+      - Foo Fighters
+      - Oasis
+      - Arctic Monkeys
+      - David Bowie
+      - Prince
+      - Madonna
+      - Michael Jackson
+      - Whitney Houston
+      - Bob Marley
+      - Bob Dylan
+      - Johnny Cash
+      - Elvis Presley
+      - Frank Sinatra
+      - Louis Armstrong
+      - Miles Davis
+      - John Coltrane
+      - Billie Holiday
+      - Ella Fitzgerald
+      - Aretha Franklin
+      - Ray Charles
+      - Jimi Hendrix
+      - The Who
+      - The Doors
+      - The Clash
+      - The Ramones
+      - AC/DC
+      - Metallica
+      - Guns N' Roses
+      - Aerosmith
+      - Pink Floyd
+      - Nirvana
+      - Radiohead
+      - U2
+      - Pearl Jam
+      - Foo Fighters
+      - Oasis
+      - Arctic Monkeys
+      - David Bowie
+      - Prince
+      - Madonna
+      - Michael Jackson
+      - Whitney Houston
+      - Bob Marley
+      - Bob Dylan
+      - Johnny Cash
+      - Elvis Presley
+      - Frank Sinatra
+      - Louis Armstrong
+      - Miles Davis
+      - John Coltrane
+      - Billie Holiday
+      - Ella Fitzgerald
+      - Aretha Franklin
+      - Ray Charles
+      - Jimi Hendrix
+      - The Who
+      - The Doors
+      - The Clash
+      - The Ramones
+      - AC/DC
+      - Metallica
+      - Guns N' Roses
+      - Aerosmith
+      - Pink Floyd
+      - Nirvana
+      - Radiohead
+      - U2
+      - Pearl Jam
+      - Foo Fighters
+      - Oasis
+      - Arctic Monkeys
+      - David Bowie
+      - Prince
+      - Madonna
+      - Michael Jackson
+      - Whitney Houston
+      - Bob Marley
+      - Bob Dylan
+      - Johnny Cash
+      - Elvis Presley
+      - Frank Sinatra
+      - Louis Armstrong
+      - Miles Davis
+      - John Coltrane
+      - Billie Holiday
+      - Ella Fitzgerald
+      - Aretha Franklin
+      - Ray Charles
+      - Jimi Hendrix
+      - The Who
+      - The Doors
+      - The Clash
+      - The Ramones
+      - AC/DC
+      - Metallica
+      - Guns N' Roses
+      - Aerosmith
+      - Pink Floyd
+      - Nirvana
+      - Radiohead
+      - U2
+      - Pearl Jam
+      - Foo Fighters
+      - Oasis
+      - Arctic Monkeys
+      - David Bowie
+      - Prince
+      - Madonna
+      - Michael Jackson
+      - Whitney Houston
+      - Bob Marley
+      - Bob Dylan
+      - Johnny Cash
+      - Elvis Presley
+      - Frank Sinatra
+      - Louis Armstrong
+      - Miles Davis
+      - John Coltrane
+      - Billie Holiday
+      - Ella Fitzgerald
+      - Aretha Franklin
+      - Ray Charles
+      - Jimi Hendrix
+      - The Who
+      - The Doors
+      - The Clash
+      - The Ramones
+      - AC/DC
+      - Metallica
+      - Guns N' Roses
+      - Aerosmith
+      - Pink Floyd
+      - Nirvana
+      - Radiohead
+      - U2
+      - Pearl Jam
+      - Foo Fighters
+      - Oasis
+      - Arctic Monkeys
+      - David Bowie
+      - Prince
+      - Madonna
+      - Michael Jackson
+      - Whitney Houston
+      - Bob Marley
+      - Bob Dylan
+      - Johnny Cash
+      - Elvis Presley
+      - Frank Sinatra
+      - Louis Armstrong
+      - Miles Davis
+      - John Coltrane
+      - Billie Holiday
+      - Ella Fitzgerald
+      - Aretha Franklin
+      - Ray Charles
+      - Jimi Hendrix
+      - The Who
+      - The Doors
+      - The Clash
+      - The Ramones
+      - AC/DC
+      - Metallica
+      - Guns N' Roses
+      - Aerosmith
+      - Pink Floyd
+      - Nirvana
+      - Radiohead
+      - U2
+      - Pearl Jam
+      - Foo Fighters
+      - Oasis
+      - Arctic Monkeys
+      - David Bowie
+      - Prince
+      - Madonna
+      - Michael Jackson
+      - Whitney Houston
+      - Bob Marley
+      - Bob Dylan
+      - Johnny Cash
+      - Elvis Presley
+      - Frank Sinatra
+      - Louis Armstrong
+      - Miles Davis
+      - John Coltrane
+      - Billie Holiday
+      - Ella Fitzgerald
+      - Aretha Franklin
+      - Ray Charles
+      - Jimi Hendrix
+      - The Who
+      - The Doors
+      - The Clash
+      - The Ramones
+      - AC/DC
+      - Metallica
+      - Guns N' Roses
+      - Aerosmith
+      - Pink Floyd
+      - Nirvana
+      - Radiohead
+      - U2
+      - Pearl Jam
+      - Foo Fighters
+      - Oasis
+      - Arctic Monkeys
+      - David Bowie
+      - Prince
+      - Madonna
+      - Michael Jackson
+      - Whitney Houston
+      - Bob Marley
+      - Bob Dylan
+      - Johnny Cash
+      - Elvis Presley
+      - Frank Sinatra
+      - Louis Armstrong
+      - Miles Davis
+      - John Coltrane
+      - Billie Holiday
+      - Ella Fitzgerald
+      - Aretha Franklin
+      - Ray Charles
+      - Jimi Hendrix
+      - The Who
+      - The Doors
+      - The Clash
+      - The Ramones
+      - AC/DC
+      - Metallica
+      - Guns N' Roses
+      - Aerosmith
+      - Pink Floyd
+      - Nirvana
+      - Radiohead
+      - U2
+      - Pearl Jam
+      - Foo Fighters
+
+  - intent: goodbye
+    examples: |
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+
+  - intent: mood_great
+    examples: |
+      - perfect
+      - great
+      - amazing
+      - feeling like a king
+      - wonderful
+      - I am feeling very good
+      - I am great
+      - I am amazing
+      - I am going to save the world
+      - super stoked
+      - extremely good
+      - so so perfect
+      - so good
+      - so perfect
+
+  - intent: mood_unhappy
+    examples: |
+      - my day was horrible
+      - I am sad
+      - I don't feel very well
+      - I am disappointed
+      - super sad
+      - I'm so sad
+      - sad
+      - very sad
+      - unhappy
+      - not good
+      - not very good
+      - extremly sad
+      - so saad
+      - so sad
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?

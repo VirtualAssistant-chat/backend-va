@@ -1,0 +1,76 @@
+version: '3.8'
+services:
+  db:
+    image: postgres
+    env_file:
+      - ./.env-postgres
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+
+  postgres_admin:
+    container_name: postgres_admin
+    image: 'dpage/pgadmin4'
+    restart: always
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+    ports:
+      - 9000:80
+    env_file:
+      - ./.env-postgres-admin
+  flyway:
+    image: flyway/flyway:7.15.0
+    depends_on:
+      - db
+    volumes:
+      - ./sql:/flyway/sql
+    command: -url=jdbc:postgresql://db/mydb migrate
+    env_file:
+      - ./.env-flyway
+  mongo:
+    container_name: mongo_db
+    image: mongo
+    restart: always
+    volumes:
+      - mongo_data:/data/db
+    ports:
+      - 27017:27017
+    env_file:
+      - ./.env-mongo
+  asr_client:
+    build:
+      context: .
+      dockerfile: Dockerfile_Python
+    command: sh -c "uvicorn src.main.java.org.fundacionjala.virtualassistant.whisper.service.ASRClient:app --reload --port=8000 --host=0.0.0.0"
+    ports:
+      - 8000:8000
+  redis:
+    container_name: redis
+    image: "redis:alpine"
+    restart: always
+    volumes:
+      - redis_volume_data:/data
+    ports:
+      - 6379:6379
+  redis_insight:
+    image: redislabs/redisinsight:latest
+    container_name: redis_insight
+    restart: always
+    ports:
+      - 8001:8001
+    volumes:
+      - redis_insight_volume_data:/db
+  rasa_client:
+    build:
+      context: .
+      dockerfile: Dockerfile_Rasa
+    command: sh -c "cd /app/rasa_serv && python3 RasaService.py"
+    ports:
+      - "8082:8082"
+      - "3333:3333"
+volumes:
+  db-data:
+  mongo_data:
+  redis_volume_data:
+  redis_insight_volume_data:

@@ -1,0 +1,69 @@
+plugins {
+    id 'org.springframework.boot' version '2.6.7'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
+}
+
+group = 'org.fundacionjala'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+task runPythonTests(type: Exec) {
+    commandLine 'python3', 'src/test/java/org/fundacionjala/virtualassistant/whisper/service/WhisperPythonTest.py'
+}
+
+test.dependsOn runPythonTests
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'com.fasterxml.jackson.core:jackson-databind'
+    implementation 'org.apache.httpcomponents:httpclient'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.jetbrains:annotations:19.0.0'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    implementation 'io.github.cdimascio:dotenv-java:3.0.0'
+    implementation group: 'com.theokanning.openai-gpt3-java', name: 'service', version: '0.14.0'
+    implementation group: 'org.mapstruct', name: 'mapstruct', version: '1.4.2.Final'
+    implementation group: 'org.apache.commons', name: 'commons-text', version: '1.9'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation "org.springframework.boot:spring-boot-starter-webflux:$springBootWebflux"
+    implementation "org.flywaydb:flyway-core:$flywayDB"
+    implementation "org.postgresql:postgresql:$postgresql"
+    //mongo:
+    implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
+    implementation "commons-fileupload:commons-fileupload:$fileupload"
+    implementation "commons-io:commons-io:$commons"
+
+    compileOnly "org.projectlombok:lombok:$lombokVersion"
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+
+    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+    annotationProcessor 'org.projectlombok:lombok'
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation "org.mockito:mockito-inline:$mockitoVersion"
+
+    //swagger
+    implementation "io.springfox:springfox-swagger2:$swaggerVersion"
+    implementation "io.springfox:springfox-swagger-ui:$swaggerVersion"
+    implementation "io.springfox:springfox-boot-starter:$swaggerVersion"
+    testImplementation "com.h2database:h2:$h2Database"
+
+    //Redis
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+    implementation "io.lettuce:lettuce-core:$lettuceVersion"
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
